@@ -1,6 +1,6 @@
 # README
 
-![example branch parameter](https://github.com/github/docs/actions/workflows/main.yml/badge.svg?branch=main)
+[![Ruby Test](https://github.com/matsu-zichi/App-EngenhariaSI/actions/workflows/ruby.yml/badge.svg)](https://github.com/matsu-zichi/App-EngenhariaSI/actions/workflows/ruby.yml)
 
 Travis CI: [![Build Status](https://app.travis-ci.com/matsu-zichi/App-EngenhariaSI.svg?branch=main)](https://app.travis-ci.com/matsu-zichi/App-EngenhariaSI)
 
