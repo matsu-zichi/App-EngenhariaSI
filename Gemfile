@@ -78,3 +78,7 @@ end
 group :test do 
   gem 'cucumber'
 end
+
+group :test do
+  gem 'coveralls', require: false
+end
