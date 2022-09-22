@@ -81,10 +81,12 @@ group :development, :test do
   gem 'rspec-rails', ">= 3.9.0"
 end
 
-group :test do 
-  gem 'cucumber'
+group :test do
+  gem 'cucumber-rails', require: false
+  # database_cleaner is not mandatory, but highly recommended
+  gem 'database_cleaner'
 end
 
-group :test do
+group :test, :development do
   gem 'coveralls', require: false
 end
