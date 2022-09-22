@@ -87,6 +87,4 @@ group :test do
   gem 'database_cleaner'
 end
 
-group :test, :development do
-  gem 'coveralls', require: false
-end
+gem 'coveralls', require: false
