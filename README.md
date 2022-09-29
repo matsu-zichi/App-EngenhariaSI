@@ -6,8 +6,6 @@ Coveralls: [![Coverage Status](https://coveralls.io/repos/github/matsu-zichi/App
 
 Code Climate (maintainability): [![Maintainability](https://api.codeclimate.com/v1/badges/379c164e8ef3e0fee147/maintainability)](https://codeclimate.com/github/matsu-zichi/App-EngenhariaSI/maintainability)
 
-Code Climate (test_coverage): [![Test Coverage](https://api.codeclimate.com/v1/badges/379c164e8ef3e0fee147/test_coverage)](https://codeclimate.com/github/matsu-zichi/App-EngenhariaSI/test_coverage)
-
 ## [Heroku](https://fierce-depths-90986.herokuapp.com/) 
 
 ## Proposta:
