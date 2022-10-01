@@ -1,0 +1,13 @@
+current directory: /home/matsumoto/trabalhos_each/engenharia_si/vendor/bundle/ruby/3.1.0/gems/json-2.6.2/ext/json
+/home/matsumoto/.rbenv/versions/3.1.2/bin/ruby -I /home/matsumoto/.rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20221001-20455-hlocy5.rb extconf.rb
+creating Makefile
+
+current directory: /home/matsumoto/trabalhos_each/engenharia_si/vendor/bundle/ruby/3.1.0/gems/json-2.6.2/ext/json
+make DESTDIR\= clean
+
+current directory: /home/matsumoto/trabalhos_each/engenharia_si/vendor/bundle/ruby/3.1.0/gems/json-2.6.2/ext/json
+make DESTDIR\=
+make: Nothing to be done for 'all'.
+
+current directory: /home/matsumoto/trabalhos_each/engenharia_si/vendor/bundle/ruby/3.1.0/gems/json-2.6.2/ext/json
+make DESTDIR\= install
