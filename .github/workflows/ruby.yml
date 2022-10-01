@@ -39,11 +39,3 @@ jobs:
       # Add or replace test runners here
       - name: Run tests
         run: bin/rake
-
-      - name: Coveralls
-        env:
-          RAILS_ENV: test
-        uses: coverallsapp/github-action@master
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          path-to-lcov: "./coverage/lcov.info"
