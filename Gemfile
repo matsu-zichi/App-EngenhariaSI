@@ -59,8 +59,8 @@ group :development, :test do
   gem "sqlite3", "~> 1.4"
   # database_cleaner is not mandatory, but highly recommended
   gem 'database_cleaner'
-  gem 'coveralls',      require: false
-
+  gem 'simplecov',      require: false
+  gem 'simplecov-lcov', require: false
 end
 
 group :development do
@@ -79,6 +79,4 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
-  gem 'simplecov',      require: false
-  gem 'simplecov-lcov', require: false
 end
