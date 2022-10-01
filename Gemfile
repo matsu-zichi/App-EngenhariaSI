@@ -9,12 +9,8 @@ gem "rails", "~> 7.0.3", ">= 7.0.3.1"
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
-# Use sqlite3 as the database for Active Record
-group :development do
-  gem "sqlite3"
-end
 # alterado para o heroku
-group :test, :production do
+group  :production do
   gem "pg" 
 end
 
@@ -59,10 +55,12 @@ group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
   gem 'rspec-rails', ">= 3.9.0"
   gem 'cucumber-rails', require: false
+# Use sqlite3 as the database for Active Record
+  gem "sqlite3", "~> 1.4"
   # database_cleaner is not mandatory, but highly recommended
   gem 'database_cleaner'
-  gem 'coveralls', require: false
-  gem 'simplecov', require: false
+  gem 'coveralls',      require: false
+  gem 'simplecov',      require: false
   gem 'simplecov-lcov', require: false
 end
 
