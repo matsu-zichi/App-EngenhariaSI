@@ -41,6 +41,8 @@ jobs:
         run: bin/rake
 
       - name: Coveralls
+        env:
+          RAILS_ENV: test
         uses: coverallsapp/github-action@master
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
