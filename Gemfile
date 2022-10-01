@@ -57,6 +57,13 @@ gem "bootsnap", require: false
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
+  gem 'rspec-rails', ">= 3.9.0"
+  gem 'cucumber-rails', require: false
+  # database_cleaner is not mandatory, but highly recommended
+  gem 'database_cleaner'
+  gem 'coveralls', require: false
+  gem 'simplecov', require: false
+  gem 'simplecov-lcov', require: false
 end
 
 group :development do
@@ -76,15 +83,3 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
-
-group :development, :test do
-  gem 'rspec-rails', ">= 3.9.0"
-end
-
-group :test do
-  gem 'cucumber-rails', require: false
-  # database_cleaner is not mandatory, but highly recommended
-  gem 'database_cleaner'
-end
-
-gem 'coveralls', require: false
