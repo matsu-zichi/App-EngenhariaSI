@@ -1,15 +1,15 @@
 # README
 
-CI: [![Ruby on Rails CI](https://github.com/matsu-zichi/App-EngenhariaSI/actions/workflows/ci.yml/badge.svg)](https://github.com/matsu-zichi/App-EngenhariaSI/actions/workflows/ci.yml)
+GitHub Actions CI: [![Ruby on Rails CI](https://github.com/matsu-zichi/App-EngenhariaSI/actions/workflows/ci.yml/badge.svg)](https://github.com/matsu-zichi/App-EngenhariaSI/actions/workflows/ci.yml)
 
 Coveralls: [![Coverage Status](https://coveralls.io/repos/github/matsu-zichi/App-EngenhariaSI/badge.svg?branch=main)](https://coveralls.io/github/matsu-zichi/App-EngenhariaSI?branch=main)
 
-Code Climate (maintainability): [![Maintainability](https://api.codeclimate.com/v1/badges/379c164e8ef3e0fee147/maintainability)](https://codeclimate.com/github/matsu-zichi/App-EngenhariaSI/maintainability)
+Code Climate: [![Maintainability](https://api.codeclimate.com/v1/badges/379c164e8ef3e0fee147/maintainability)](https://codeclimate.com/github/matsu-zichi/App-EngenhariaSI/maintainability)
 
 ## [Heroku](https://fierce-depths-90986.herokuapp.com/) | [Pivotal Tracker](https://www.pivotaltracker.com/n/projects/2603035)
 
 ## Proposta:
-Idosos podem ter problemas relacionados a memória que afetam sua rotina. Netos geralemente ajudam no cuidado com os seus parentes mais velhos. O objetivo de nosso projeto é criar um sistema que auxilia os netos a gerenciar os recursos básicos dos idosos como lembretes de tomar medicações, realizar exames/consultas e até data de validade de alimentos. 
+Lembrar das coisas tem se tornado cada vez mais difícil nos dias atuais. Com mais tarefas, atividades e demandas, podemos ficar sobrecarregados com tanta informação que precisamos processar. Visando isso, o objetivo de nosso EP é criar um sistema de lembretes para diferentes contextos, desde auxiliar o usuário com tarefas simples como lembretes para ajuda-lo com as demandas dos mais idosos da familia como tomar remédio, a outros tipos de lembretes como de comidas que estão pra vençer, de provas na faculdade que estão para chegar e prazos de entregas no trabalho acabando. 
 
 ## Integrantes:
 - Pedro Paulo Rodrigues da Silva
