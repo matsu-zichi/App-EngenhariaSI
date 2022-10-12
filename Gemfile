@@ -55,6 +55,9 @@ group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
   gem 'rspec-rails', ">= 3.9.0"
   gem 'cucumber-rails', require: false
+  gem 'cucumber'
+  gem "capybara"
+
 # Use sqlite3 as the database for Active Record
   gem "sqlite3", "~> 1.4"
   # database_cleaner is not mandatory, but highly recommended
@@ -76,7 +79,7 @@ end
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
-  gem "capybara"
+
   gem "selenium-webdriver"
   gem "webdrivers"
 end

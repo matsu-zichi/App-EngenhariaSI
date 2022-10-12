@@ -101,10 +101,17 @@
       "/home/matsumoto/trabalhos_each/engenharia_si/app/controllers/application_controller.rb": {
         "lines": [
           0,
-          0,
-          0,
-          0,
           null,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/controllers/home_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
           0
         ],
         "branches": {
@@ -151,6 +158,6 @@
         }
       }
     },
-    "timestamp": 1664639975
+    "timestamp": 1665535695
   }
 }

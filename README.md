@@ -15,5 +15,5 @@ Lembrar das coisas tem se tornado cada vez mais difícil nos dias atuais. Com ma
 - Pedro Paulo Rodrigues da Silva
 - Rodrigo Marcelo Moreira Birocchi 
 - Ronald Cosmo de Sousa  
-- Thiago Matsumoto Siqui 
+- Thiago Matsumoto Zichi 
 - Victor Keiji Kissaba 

@@ -12,10 +12,13 @@ DA:4,0
 end_of_record
 SF:./app/controllers/application_controller.rb
 DA:1,0
+DA:3,0
+end_of_record
+SF:./app/controllers/home_controller.rb
+DA:1,0
 DA:2,0
 DA:3,0
 DA:4,0
-DA:6,0
 end_of_record
 SF:./app/helpers/application_helper.rb
 DA:1,0
