@@ -237,7 +237,7 @@
         }
       }
     },
-    "timestamp": 1666649349
+    "timestamp": 1666649959
   },
   "Cucumber Features": {
     "coverage": {
@@ -253,6 +253,8 @@
           null,
           null,
           null,
+          null,
+          1,
           null
         ]
       },
@@ -325,6 +327,12 @@
           null
         ]
       },
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/helpers/products_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
       "/home/matsumoto/trabalhos_each/engenharia_si/app/models/ambiente.rb": {
         "lines": [
           1,
@@ -363,6 +371,83 @@
         "branches": {
         }
       },
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/controllers/products_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
       "/home/matsumoto/trabalhos_each/engenharia_si/app/jobs/application_job.rb": {
         "lines": [
           0,
@@ -385,8 +470,17 @@
         ],
         "branches": {
         }
+      },
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/models/product.rb": {
+        "lines": [
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
       }
     },
-    "timestamp": 1666561240
+    "timestamp": 1666649963
   }
 }
