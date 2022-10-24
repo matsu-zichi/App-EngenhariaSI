@@ -13,6 +13,8 @@
           null,
           null,
           null,
+          null,
+          1,
           null
         ]
       },
@@ -35,10 +37,105 @@
           null
         ]
       },
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/helpers/products_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
       "/home/matsumoto/trabalhos_each/engenharia_si/app/models/ambiente.rb": {
         "lines": [
           1,
           1,
+          null
+        ]
+      },
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/models/product.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/controllers/products_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null
+        ]
+      },
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null,
           null
         ]
       },
@@ -81,13 +178,6 @@
           1,
           0,
           null,
-          null,
-          null
-        ]
-      },
-      "/home/matsumoto/trabalhos_each/engenharia_si/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
           null,
           null
         ]
@@ -147,7 +237,7 @@
         }
       }
     },
-    "timestamp": 1666561236
+    "timestamp": 1666649349
   },
   "Cucumber Features": {
     "coverage": {
