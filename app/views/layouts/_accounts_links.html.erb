@@ -1,18 +1,8 @@
 <% if user_signed_in? %>
-    <div class="dropdown" >
-        <button class="dropbtn">
-            <%= current_user.email %>
-        </button>
-        <ul class="dropdown-content">
-            <li>
-                <%= link_to 'Edit User', edit_user_registration_path, class: 'dropdown-item' %>
-            </li>
-            <li>
-                <%= link_to 'Sing out', destroy_user_session_path, method: :delete, class: 'dropdown-item' %>
-            </li>
-        </ul>
-    </div>
-<% else %>
-    <%= link_to 'Sing in', new_user_session_path %>
-    <%= link_to 'Sing up', new_user_registration_path %>
+    <%= link_to 'Editar Conta', edit_user_registration_path, class:"btn btn-secondary" %>    
+    <%= link_to 'Sair', destroy_user_session_path, class:"btn btn-danger" %>
+
+    <% else %>    
+    <%= link_to 'Entrar', new_user_session_path, class:"btn btn-success" %>
+    <%= link_to 'Criar Conta Nova', new_user_registration_path, class:"btn btn-secondary" %>
 <% end %>
