@@ -9,8 +9,11 @@
           <li class="nav-item"><%= link_to 'Ambientes', ambientes_path, class: "nav-link"%></li>
           <li class="nav-item"><a class="nav-link" href="#"> Link dos Ambientes aqui</a></li>
           <li class="nav-item"><a class="nav-link" href="#"> Link de criação de novo ambiente aqui</a></li>
+          <li class="nav-item">
+            <%= link_to "Meus Produtos", products_path,  class:"nav-link" %>
+          </li>
       </ul>
-      <div class="navbar-right">
+      <div class="navbar-right ml-auto">
         <%= render 'layouts/accounts_links' %>
       </div>
     </div>
