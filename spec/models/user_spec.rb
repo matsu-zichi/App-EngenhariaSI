@@ -1,5 +1,10 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it 'possui um endereço de email' do     
+    user = User.new
+    user.email = ''
+    user.validate
+    expect(user.errors[:email]).to include("can't be blank")
+  end
 end

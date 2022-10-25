@@ -1,4 +1,7 @@
 class User < ApplicationRecord
+
+  validates :email, presence: {message: "É necessário informar um endereço de email"}
+
   # Include default devise modules. Others available are:
   # :lockable, :timeoutable, and :omniauthable
   devise :confirmable,
