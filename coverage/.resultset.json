@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/rodrigo/Desktop/App-EngenhariaSI/app/models/user.rb": {
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/models/user.rb": {
         "lines": [
           1,
           null,
@@ -19,57 +19,39 @@
           null
         ]
       },
-      "/home/rodrigo/Desktop/App-EngenhariaSI/app/models/application_record.rb": {
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/models/application_record.rb": {
         "lines": [
           1,
           1,
           null
         ]
       },
-      "/home/rodrigo/Desktop/App-EngenhariaSI/app/helpers/ambientes_helper.rb": {
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/helpers/ambientes_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/home/rodrigo/Desktop/App-EngenhariaSI/app/helpers/application_helper.rb": {
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/helpers/application_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/home/rodrigo/Desktop/App-EngenhariaSI/app/models/ambiente.rb": {
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/models/ambiente.rb": {
         "lines": [
           1,
           1,
           null
         ]
       },
-      "/home/rodrigo/Desktop/App-EngenhariaSI/app/controllers/ambientes_controller.rb": {
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/controllers/ambientes_controller.rb": {
         "lines": [
           1,
-          null,
+          1,
           null,
           1,
           1,
-          null,
-          null,
-          null,
-          1,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          null,
-          null,
-          null,
-          0,
-          0,
-          null,
-          null,
-          null,
           null,
           null,
           1,
@@ -77,25 +59,74 @@
           null,
           null,
           1,
-          1,
           null,
           null,
-          1,
+          null,
+          null,
           1,
           0,
           null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          0,
+          null,
+          1,
+          0,
           null,
           null
         ]
       },
-      "/home/rodrigo/Desktop/App-EngenhariaSI/app/controllers/application_controller.rb": {
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/controllers/application_controller.rb": {
         "lines": [
           1,
           null,
           null
         ]
       },
-      "/home/rodrigo/Desktop/App-EngenhariaSI/app/channels/application_cable/channel.rb": {
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/channels/application_cable/channel.rb": {
         "lines": [
           0,
           0,
@@ -105,7 +136,7 @@
         "branches": {
         }
       },
-      "/home/rodrigo/Desktop/App-EngenhariaSI/app/channels/application_cable/connection.rb": {
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/channels/application_cable/connection.rb": {
         "lines": [
           0,
           0,
@@ -115,7 +146,7 @@
         "branches": {
         }
       },
-      "/home/rodrigo/Desktop/App-EngenhariaSI/app/controllers/home_controller.rb": {
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/controllers/home_controller.rb": {
         "lines": [
           0,
           0,
@@ -126,7 +157,7 @@
         "branches": {
         }
       },
-      "/home/rodrigo/Desktop/App-EngenhariaSI/app/jobs/application_job.rb": {
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/jobs/application_job.rb": {
         "lines": [
           0,
           null,
@@ -139,7 +170,7 @@
         "branches": {
         }
       },
-      "/home/rodrigo/Desktop/App-EngenhariaSI/app/mailers/application_mailer.rb": {
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/mailers/application_mailer.rb": {
         "lines": [
           0,
           0,
@@ -150,11 +181,11 @@
         }
       }
     },
-    "timestamp": 1666672137
+    "timestamp": 1666737828
   },
   "Cucumber Features": {
     "coverage": {
-      "/home/rodrigo/Desktop/App-EngenhariaSI/app/models/user.rb": {
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/models/user.rb": {
         "lines": [
           1,
           null,
@@ -172,22 +203,30 @@
           null
         ]
       },
-      "/home/rodrigo/Desktop/App-EngenhariaSI/app/models/application_record.rb": {
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/models/application_record.rb": {
         "lines": [
           1,
           1,
           null
         ]
       },
-      "/home/rodrigo/Desktop/App-EngenhariaSI/app/controllers/ambientes_controller.rb": {
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/controllers/ambientes_controller.rb": {
         "lines": [
           1,
-          null,
+          1,
           null,
           1,
           2,
           null,
           null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
           null,
           1,
           2,
@@ -205,9 +244,29 @@
           null,
           null,
           null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
           null,
           1,
-          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
           null,
           null,
           1,
@@ -215,40 +274,43 @@
           null,
           null,
           1,
+          null,
+          1,
+          1,
+          null,
           1,
           2,
           null,
-          null,
           null
         ]
       },
-      "/home/rodrigo/Desktop/App-EngenhariaSI/app/controllers/application_controller.rb": {
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/controllers/application_controller.rb": {
         "lines": [
           1,
           null,
           null
         ]
       },
-      "/home/rodrigo/Desktop/App-EngenhariaSI/app/helpers/application_helper.rb": {
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/helpers/application_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/home/rodrigo/Desktop/App-EngenhariaSI/app/helpers/ambientes_helper.rb": {
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/helpers/ambientes_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/home/rodrigo/Desktop/App-EngenhariaSI/app/models/ambiente.rb": {
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/models/ambiente.rb": {
         "lines": [
           1,
           1,
           null
         ]
       },
-      "/home/rodrigo/Desktop/App-EngenhariaSI/app/controllers/home_controller.rb": {
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/controllers/home_controller.rb": {
         "lines": [
           1,
           1,
@@ -257,7 +319,7 @@
           null
         ]
       },
-      "/home/rodrigo/Desktop/App-EngenhariaSI/app/channels/application_cable/channel.rb": {
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/channels/application_cable/channel.rb": {
         "lines": [
           0,
           0,
@@ -267,7 +329,7 @@
         "branches": {
         }
       },
-      "/home/rodrigo/Desktop/App-EngenhariaSI/app/channels/application_cable/connection.rb": {
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/channels/application_cable/connection.rb": {
         "lines": [
           0,
           0,
@@ -277,7 +339,7 @@
         "branches": {
         }
       },
-      "/home/rodrigo/Desktop/App-EngenhariaSI/app/jobs/application_job.rb": {
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/jobs/application_job.rb": {
         "lines": [
           0,
           null,
@@ -290,7 +352,7 @@
         "branches": {
         }
       },
-      "/home/rodrigo/Desktop/App-EngenhariaSI/app/mailers/application_mailer.rb": {
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/mailers/application_mailer.rb": {
         "lines": [
           0,
           0,
@@ -301,6 +363,6 @@
         }
       }
     },
-    "timestamp": 1666672147
+    "timestamp": 1666737831
   }
 }

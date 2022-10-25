@@ -3,7 +3,10 @@
 <%= render @ambiente %>
 
 <div>
-  
-  <%= link_to "Back to ambientes", ambientes_path %>
-  
+  <%= link_to "Voltar para Ambientes", ambientes_path %> |
+  <%= link_to "Editar esse ambiente", edit_ambiente_path(@ambiente) %> 
+</div>
+<br>
+<div>
+  <%= button_to "Deletar", @ambiente, method: :delete, form: {data: {turbo_confirm: 'Are you sure?'}} %>
 </div>
