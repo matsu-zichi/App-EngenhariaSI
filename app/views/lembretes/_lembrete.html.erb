@@ -1,0 +1,16 @@
+<div id="<%= dom_id lembrete %>">
+  <p>
+    <strong>Titulo:</strong>
+    <%= lembrete.titulo %>
+  </p>
+
+  <p>
+    <strong>Texto:</strong>
+    <%= lembrete.texto %>
+  </p>
+  
+  <p>
+    <%= link_to 'Editar lembrete', edit_ambiente_lembrete_path(@ambiente, lembrete) %>
+    <%= button_to "Deletar lembrete", ambiente_lembrete_path(@ambiente, lembrete), method: :delete %>
+  </p>
+</div>
