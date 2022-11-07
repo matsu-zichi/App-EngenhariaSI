@@ -1,0 +1,10 @@
+<h1>Editing lembrete</h1>
+
+<%= render "form", lembrete: @lembrete %>
+
+<br>
+
+<div>
+  <%= link_to "Detalhes", [@ambiente, @lembrete] %> |
+  <%= link_to "Voltar", ambiente_lembretes_path(@ambiente) %>
+</div>

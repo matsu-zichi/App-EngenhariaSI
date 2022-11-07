@@ -1,0 +1,12 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Lembretes no ambiente <%= @ambiente.nome %> </h1>
+
+<div id="lembretes">
+  <% @lembretes.each do |lembrete| %>
+    <%= render lembrete %>
+  <% end %>
+</div>
+
+<%= link_to "New lembrete", new_ambiente_lembrete_path %> <br>
+<%= link_to 'Voltar para ambiente', [@ambiente] %>

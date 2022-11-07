@@ -1,0 +1,8 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @lembrete %>
+
+<div>
+  <%= link_to "Editar lembrete", edit_ambiente_lembrete_path(@ambiente, @lembrete) %> |
+  <%= link_to "Voltar", ambiente_lembretes_path %>
+</div>

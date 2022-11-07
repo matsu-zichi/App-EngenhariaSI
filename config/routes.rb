@@ -1,11 +1,13 @@
 Rails.application.routes.draw do
-  
-  devise_for :users
+
   root 'home#index'
-  resources :ambientes
+  
+  resources :ambientes do
+    resources :lembretes
+  end
+
+  devise_for :users
   devise_scope :user do  
     get '/users/sign_out' => 'devise/sessions#destroy'     
   end
-
-  
 end
