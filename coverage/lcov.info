@@ -12,10 +12,11 @@ DA:4,0
 end_of_record
 SF:./app/controllers/ambientes_controller.rb
 DA:1,2
+DA:2,2
 DA:4,2
 DA:5,3
-DA:9,2
-DA:10,2
+DA:8,2
+DA:9,3
 DA:12,2
 DA:13,2
 DA:14,2
