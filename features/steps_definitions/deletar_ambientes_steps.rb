@@ -1,8 +1,5 @@
 Dado('que eu estou na página de visualização do ambiente {string}') do |string|
-   @ambiente = Ambiente.create(
-      :nome => string,
-      :descricao => "Lembretes da facul"
-   )
+   @ambiente = FactoryBot.create(:ambiente, nome: "Faculdade", descricao: "Lembretes da facul")
    visit "/ambientes/#{@ambiente.id}"
 end
 
