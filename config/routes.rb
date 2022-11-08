@@ -3,6 +3,9 @@ Rails.application.routes.draw do
   root 'home#index'
   
   resources :ambientes do
+    collection do
+      get 'list'
+    end
     resources :lembretes
   end
 

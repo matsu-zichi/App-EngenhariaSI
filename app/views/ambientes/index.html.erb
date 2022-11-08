@@ -1,12 +1,29 @@
 <h1>Ambientes</h1>
 
-<div id="ambientes">
-  <% @ambientes.each do |ambiente| %>
-    <%= render ambiente %>
-    <p>
-      <%= link_to "Ver esse ambiente", ambiente %>
-    </p>
-  <% end %>
-</div>
 
-<%= link_to "Novo Ambiente", new_ambiente_path %>
+<div id="questions">
+  <%= turbo_frame_tag "ambientes"%>
+    <table class="table">
+      <thead>
+        <tr>
+          <th><%= link_to "Nome", :sort => "nome" %></th>
+          <th>Descricao</th>
+          <th> <%= link_to "Data de Criação",  id: "Data de Criação", :sort => "created_at"%></th>
+        </tr>
+      </thead>
+      <tbody class="table-group-divider">
+
+      <% @ambientes.each do |ambiente| %>
+          <tr>
+            <td><%= ambiente.nome %></td>
+            <td><%= ambiente.descricao %></td>
+            <td><%= ambiente.created_at %></td>
+            <td><%= link_to "Show Ambiente", ambiente, class: "btn btn-info"%></td>
+            <td><%= link_to "Edit Ambiente", edit_ambiente_path(ambiente), class:"btn btn-warning" %></td>
+        </tr>
+      <% end %>
+      </tbody>
+    </table>
+
+</div>
+<%= link_to "New Ambiente", new_ambiente_path, class: "btn btn-secondary" %>

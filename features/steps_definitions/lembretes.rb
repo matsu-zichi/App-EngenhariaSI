@@ -17,7 +17,8 @@ Dado('que já criei um ambiente {string} com descrição {string}') do |string, 
 end
 
 Quando('for na página de lembretes do ambiente') do
-    visit ambientes_path
+    # visit ambientes_path
+    visit "/ambientes/#{@ambiente.id}"
     click_on "Mostrar lembretes"
 end
 
