@@ -56,7 +56,8 @@ class AmbientesController < ApplicationController
 
 
   def index
-    @ambientes = Ambiente.all
+    # @ambientes = Ambiente.order(:id)
+    @ambientes = Ambiente.order(params[:sort])
   end
 
   private
