@@ -12,7 +12,7 @@ Cenário:
     Quando for na página de lembretes do ambiente
     E cliclar em 'New lembrete'
     E preencher "Titulo" com "Lembrete"
-    E preecher "Texto" com "Não se esquecer de fazer as tarefas"
+    E preecher "Descricao" com "Não se esquecer de fazer as tarefas"
     E cliclar em "Create Lembrete"
     Entao deveria ver "Lembrete was successfully created."
 
@@ -20,7 +20,7 @@ Cenário:
     Quando for na página de lembretes do ambiente
     E cliclar em 'New lembrete'
     E preencher "Titulo" com "Outro Lembrete"
-    E preecher "Texto" com "Não se esquecer"
+    E preecher "Descricao" com "Não se esquecer"
     E cliclar em "Create Lembrete"
     E clicar em "Deletar lembrete"
     Então deveria ver "Lembrete was successfully destroyed."
@@ -29,11 +29,11 @@ Cenário:
     Quando for na página de lembretes do ambiente
     E cliclar em 'New lembrete'
     E preencher "Titulo" com "Lembrete"
-    E preecher "Texto" com "Não se esquecer de fazer as tarefas"
+    E preecher "Descricao" com "Não se esquecer de fazer as tarefas"
     E cliclar em "Create Lembrete"
     E clicar em "Editar lembrete"
     E preencher "Titulo" com "EDITADO"
-    E preecher "Texto" com "EDITADO"
+    E preecher "Descricao" com "EDITADO"
     E clicar em "Update Lembrete"
     Então deveria ver "Lembrete was successfully updated."
 
@@ -41,7 +41,7 @@ Cenário:
     Quando for na página de lembretes do ambiente
     E clicar em 'New lembrete'
     E preencher "Titulo" com ""
-    E preecher "Texto" com "Texto"
+    E preecher "Descricao" com "Texto"
     E clicar em "Create Lembrete"
     Então deveria ver "Titulo can't be blank"
 
@@ -49,14 +49,14 @@ Cenário:
     Quando for na página de lembretes do ambiente
     E clicar em 'New lembrete'
     E preencher "Titulo" com "Titulo"
-    E preecher "Texto" com ""
+    E preecher "Descricao" com ""
     E clicar em "Create Lembrete"
-    Então deveria ver "Texto can't be blank"
+    Então deveria ver "Descricao can't be blank"
 
 Cenário:
     Quando for na página de lembretes do ambiente
     E clicar em 'New lembrete'
     E preencher "Titulo" com ""
-    E preecher "Texto" com ""
+    E preecher "Descricao" com ""
     E clicar em "Create Lembrete"
     Então deveria ver "2 errors prohibited this lembrete from being saved:"
