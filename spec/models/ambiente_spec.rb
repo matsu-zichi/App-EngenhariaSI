@@ -1,10 +1,9 @@
 require 'rails_helper'
-require 'spec_helper'
+require 'factory_bot'
 
-RSpec.describe Ambiente, type: :model do
+RSpec.describe Ambiente do
   it 'invalido sem nome' do
-    ambiente = Ambiente.new
-    ambiente.descricao = "Uma descrição qualquer..."
+    ambiente = build(:ambiente, :nome => "", :descricao => "Uma descrição qualquer...") # por ter o support/factory_bot não precisa usar a classe Factory, basta usar os métodos (usar a classe causa NameErro)
     expect(ambiente).not_to be_valid
   end
 end
