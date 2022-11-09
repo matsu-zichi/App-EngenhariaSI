@@ -17,10 +17,15 @@
   </div>
 
   <div>
-    <%= form.label :texto, style: "display: block" %>
-    <%= form.text_field :texto %>
+    <%= form.label :descricao, style: "display: block" %>
+    <%= form.text_field :descricao %>
   </div>
 
+  <div>
+    <%= form.label :data_de_vencimento, style: "display: block" %>
+    <%= form.date_field :expire_at, min: 0.days.ago %>
+  </div>
+  <br>
   <div>
     <%= form.submit %>
   </div>

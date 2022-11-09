@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_10_25_213034) do
+ActiveRecord::Schema[7.0].define(version: 2022_11_08_234249) do
   create_table "ambientes", force: :cascade do |t|
     t.string "nome"
     t.string "descricao"
@@ -20,10 +20,11 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_25_213034) do
 
   create_table "lembretes", force: :cascade do |t|
     t.string "titulo"
-    t.string "texto"
+    t.string "descricao"
     t.integer "ambiente_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.datetime "expire_at"
     t.index ["ambiente_id"], name: "index_lembretes_on_ambiente_id"
   end
 
