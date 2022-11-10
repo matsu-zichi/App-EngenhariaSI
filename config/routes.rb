@@ -6,7 +6,9 @@ Rails.application.routes.draw do
     collection do
       get 'list'
     end
-    resources :lembretes
+    resources :lembretes do
+      resources :subitem
+    end
   end
 
   devise_for :users

@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/matsumoto/trabalhos_each/engenharia_si/app/models/user.rb": {
+      "/mnt/d/Estudos/Faculdade/10 semestre/ESI/App-EngenhariaSI/app/models/user.rb": {
         "lines": [
           1,
           null,
@@ -21,32 +21,38 @@
           null
         ]
       },
-      "/home/matsumoto/trabalhos_each/engenharia_si/app/models/application_record.rb": {
+      "/mnt/d/Estudos/Faculdade/10 semestre/ESI/App-EngenhariaSI/app/models/application_record.rb": {
         "lines": [
           1,
           1,
           null
         ]
       },
-      "/home/matsumoto/trabalhos_each/engenharia_si/app/helpers/ambientes_helper.rb": {
+      "/mnt/d/Estudos/Faculdade/10 semestre/ESI/App-EngenhariaSI/app/helpers/ambientes_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/home/matsumoto/trabalhos_each/engenharia_si/app/helpers/application_helper.rb": {
+      "/mnt/d/Estudos/Faculdade/10 semestre/ESI/App-EngenhariaSI/app/helpers/application_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/home/matsumoto/trabalhos_each/engenharia_si/app/helpers/lembretes_helper.rb": {
+      "/mnt/d/Estudos/Faculdade/10 semestre/ESI/App-EngenhariaSI/app/helpers/lembretes_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/home/matsumoto/trabalhos_each/engenharia_si/app/models/ambiente.rb": {
+      "/mnt/d/Estudos/Faculdade/10 semestre/ESI/App-EngenhariaSI/app/helpers/subitem_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/mnt/d/Estudos/Faculdade/10 semestre/ESI/App-EngenhariaSI/app/models/ambiente.rb": {
         "lines": [
           1,
           null,
@@ -56,23 +62,31 @@
           null
         ]
       },
-      "/home/matsumoto/trabalhos_each/engenharia_si/app/models/lembrete.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          1,
-          null
-        ]
-      },
-      "/home/matsumoto/trabalhos_each/engenharia_si/app/controllers/ambientes_controller.rb": {
+      "/mnt/d/Estudos/Faculdade/10 semestre/ESI/App-EngenhariaSI/app/models/lembrete.rb": {
         "lines": [
           1,
           1,
           null,
           1,
           1,
+          null
+        ]
+      },
+      "/mnt/d/Estudos/Faculdade/10 semestre/ESI/App-EngenhariaSI/app/models/subitem.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/mnt/d/Estudos/Faculdade/10 semestre/ESI/App-EngenhariaSI/app/controllers/ambientes_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
           null,
           null,
           1,
@@ -141,14 +155,14 @@
           null
         ]
       },
-      "/home/matsumoto/trabalhos_each/engenharia_si/app/controllers/application_controller.rb": {
+      "/mnt/d/Estudos/Faculdade/10 semestre/ESI/App-EngenhariaSI/app/controllers/application_controller.rb": {
         "lines": [
           1,
           null,
           null
         ]
       },
-      "/home/matsumoto/trabalhos_each/engenharia_si/app/channels/application_cable/channel.rb": {
+      "/mnt/d/Estudos/Faculdade/10 semestre/ESI/App-EngenhariaSI/app/channels/application_cable/channel.rb": {
         "lines": [
           0,
           0,
@@ -158,7 +172,7 @@
         "branches": {
         }
       },
-      "/home/matsumoto/trabalhos_each/engenharia_si/app/channels/application_cable/connection.rb": {
+      "/mnt/d/Estudos/Faculdade/10 semestre/ESI/App-EngenhariaSI/app/channels/application_cable/connection.rb": {
         "lines": [
           0,
           0,
@@ -168,7 +182,7 @@
         "branches": {
         }
       },
-      "/home/matsumoto/trabalhos_each/engenharia_si/app/controllers/home_controller.rb": {
+      "/mnt/d/Estudos/Faculdade/10 semestre/ESI/App-EngenhariaSI/app/controllers/home_controller.rb": {
         "lines": [
           0,
           0,
@@ -179,7 +193,7 @@
         "branches": {
         }
       },
-      "/home/matsumoto/trabalhos_each/engenharia_si/app/controllers/lembretes_controller.rb": {
+      "/mnt/d/Estudos/Faculdade/10 semestre/ESI/App-EngenhariaSI/app/controllers/lembretes_controller.rb": {
         "lines": [
           0,
           0,
@@ -262,7 +276,38 @@
         "branches": {
         }
       },
-      "/home/matsumoto/trabalhos_each/engenharia_si/app/jobs/application_job.rb": {
+      "/mnt/d/Estudos/Faculdade/10 semestre/ESI/App-EngenhariaSI/app/controllers/subitem_controller.rb": {
+        "lines": [
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/mnt/d/Estudos/Faculdade/10 semestre/ESI/App-EngenhariaSI/app/jobs/application_job.rb": {
         "lines": [
           0,
           null,
@@ -275,7 +320,7 @@
         "branches": {
         }
       },
-      "/home/matsumoto/trabalhos_each/engenharia_si/app/mailers/application_mailer.rb": {
+      "/mnt/d/Estudos/Faculdade/10 semestre/ESI/App-EngenhariaSI/app/mailers/application_mailer.rb": {
         "lines": [
           0,
           0,
@@ -286,11 +331,11 @@
         }
       }
     },
-    "timestamp": 1667874965
+    "timestamp": 1668036548
   },
   "Cucumber Features": {
     "coverage": {
-      "/home/matsumoto/trabalhos_each/engenharia_si/app/models/user.rb": {
+      "/mnt/d/Estudos/Faculdade/10 semestre/ESI/App-EngenhariaSI/app/models/user.rb": {
         "lines": [
           1,
           null,
@@ -310,14 +355,14 @@
           null
         ]
       },
-      "/home/matsumoto/trabalhos_each/engenharia_si/app/models/application_record.rb": {
+      "/mnt/d/Estudos/Faculdade/10 semestre/ESI/App-EngenhariaSI/app/models/application_record.rb": {
         "lines": [
           1,
           1,
           null
         ]
       },
-      "/home/matsumoto/trabalhos_each/engenharia_si/app/controllers/ambientes_controller.rb": {
+      "/mnt/d/Estudos/Faculdade/10 semestre/ESI/App-EngenhariaSI/app/controllers/ambientes_controller.rb": {
         "lines": [
           1,
           1,
@@ -392,32 +437,38 @@
           null
         ]
       },
-      "/home/matsumoto/trabalhos_each/engenharia_si/app/controllers/application_controller.rb": {
+      "/mnt/d/Estudos/Faculdade/10 semestre/ESI/App-EngenhariaSI/app/controllers/application_controller.rb": {
         "lines": [
           1,
           null,
           null
         ]
       },
-      "/home/matsumoto/trabalhos_each/engenharia_si/app/helpers/application_helper.rb": {
+      "/mnt/d/Estudos/Faculdade/10 semestre/ESI/App-EngenhariaSI/app/helpers/application_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/home/matsumoto/trabalhos_each/engenharia_si/app/helpers/ambientes_helper.rb": {
+      "/mnt/d/Estudos/Faculdade/10 semestre/ESI/App-EngenhariaSI/app/helpers/ambientes_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/home/matsumoto/trabalhos_each/engenharia_si/app/helpers/lembretes_helper.rb": {
+      "/mnt/d/Estudos/Faculdade/10 semestre/ESI/App-EngenhariaSI/app/helpers/lembretes_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/home/matsumoto/trabalhos_each/engenharia_si/app/models/ambiente.rb": {
+      "/mnt/d/Estudos/Faculdade/10 semestre/ESI/App-EngenhariaSI/app/helpers/subitem_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/mnt/d/Estudos/Faculdade/10 semestre/ESI/App-EngenhariaSI/app/models/ambiente.rb": {
         "lines": [
           1,
           null,
@@ -427,7 +478,7 @@
           null
         ]
       },
-      "/home/matsumoto/trabalhos_each/engenharia_si/app/models/lembrete.rb": {
+      "/mnt/d/Estudos/Faculdade/10 semestre/ESI/App-EngenhariaSI/app/models/lembrete.rb": {
         "lines": [
           1,
           1,
@@ -437,20 +488,11 @@
           null
         ]
       },
-      "/home/matsumoto/trabalhos_each/engenharia_si/app/controllers/lembretes_controller.rb": {
+      "/mnt/d/Estudos/Faculdade/10 semestre/ESI/App-EngenhariaSI/app/controllers/lembretes_controller.rb": {
         "lines": [
           1,
           1,
           1,
-          null,
-          null,
-          1,
-          10,
-          null,
-          null,
-          null,
-          1,
-          null,
           null,
           null,
           1,
@@ -465,23 +507,19 @@
           1,
           6,
           null,
-          6,
-          6,
-          6,
-          3,
-          null,
-          6,
-          3,
           null,
           null,
+          1,
           null,
           null,
           null,
           1,
-          1,
-          1,
-          2,
-          1,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
           null,
           0,
           0,
@@ -491,43 +529,93 @@
           null,
           null,
           1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
           1,
           null,
           1,
-          2,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          1,
+          12,
+          null,
+          null,
+          null
+        ]
+      },
+      "/mnt/d/Estudos/Faculdade/10 semestre/ESI/App-EngenhariaSI/app/controllers/home_controller.rb": {
+        "lines": [
+          1,
+          1,
           1,
           null,
-          null,
-          null,
+          null
+        ]
+      },
+      "/mnt/d/Estudos/Faculdade/10 semestre/ESI/App-EngenhariaSI/app/controllers/subitem_controller.rb": {
+        "lines": [
           1,
           null,
           1,
           4,
           null,
           null,
+          1,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
           null,
           1,
-          7,
+          0,
           null,
           null,
           1,
           1,
-          26,
-          null,
+          0,
           null,
           null
         ]
       },
-      "/home/matsumoto/trabalhos_each/engenharia_si/app/controllers/home_controller.rb": {
+      "/mnt/d/Estudos/Faculdade/10 semestre/ESI/App-EngenhariaSI/app/models/subitem.rb": {
         "lines": [
           1,
           1,
           1,
-          null,
           null
         ]
       },
-      "/home/matsumoto/trabalhos_each/engenharia_si/app/channels/application_cable/channel.rb": {
+      "/mnt/d/Estudos/Faculdade/10 semestre/ESI/App-EngenhariaSI/app/channels/application_cable/channel.rb": {
         "lines": [
           0,
           0,
@@ -537,7 +625,7 @@
         "branches": {
         }
       },
-      "/home/matsumoto/trabalhos_each/engenharia_si/app/channels/application_cable/connection.rb": {
+      "/mnt/d/Estudos/Faculdade/10 semestre/ESI/App-EngenhariaSI/app/channels/application_cable/connection.rb": {
         "lines": [
           0,
           0,
@@ -547,7 +635,7 @@
         "branches": {
         }
       },
-      "/home/matsumoto/trabalhos_each/engenharia_si/app/jobs/application_job.rb": {
+      "/mnt/d/Estudos/Faculdade/10 semestre/ESI/App-EngenhariaSI/app/jobs/application_job.rb": {
         "lines": [
           0,
           null,
@@ -560,7 +648,7 @@
         "branches": {
         }
       },
-      "/home/matsumoto/trabalhos_each/engenharia_si/app/mailers/application_mailer.rb": {
+      "/mnt/d/Estudos/Faculdade/10 semestre/ESI/App-EngenhariaSI/app/mailers/application_mailer.rb": {
         "lines": [
           0,
           0,
@@ -571,6 +659,6 @@
         }
       }
     },
-    "timestamp": 1667874969
+    "timestamp": 1668036562
   }
 }
