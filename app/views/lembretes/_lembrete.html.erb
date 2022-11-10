@@ -8,7 +8,17 @@
     <strong>Descrição:</strong>
     <%= lembrete.descricao %>
   </p>
-  
+
+  <p>
+    <strong>Data de expiração:</strong>
+    <%= lembrete.expire_at.strftime("%d/%m/%Y, %H:%M:%S") %>
+  </p>
+
+  <p>
+    <strong>Tempo restante:</strong>
+    <%= lembrete.expire_at - DateTime.now %> segundos
+  </p>
+
   <p>
     <%= link_to 'Editar lembrete', edit_ambiente_lembrete_path(@ambiente, lembrete) %>
     <%= button_to "Deletar lembrete", ambiente_lembrete_path(@ambiente, lembrete), method: :delete %>
