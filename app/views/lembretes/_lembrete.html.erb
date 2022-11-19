@@ -16,7 +16,8 @@
 
   <p>
     <strong>Tempo restante:</strong>
-    <%= lembrete.expire_at - DateTime.now %> segundos
+    <%= calcula_countdown(lembrete.expire_at - DateTime.now) %> 
+    <%# funcao em lembretes_helper.rb %>
   </p>
 
   <p>
