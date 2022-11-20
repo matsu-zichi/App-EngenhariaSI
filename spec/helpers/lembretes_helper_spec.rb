@@ -2,14 +2,14 @@ require 'rails_helper'
 include LembretesHelper
 
 RSpec.describe LembretesHelper, type: :helper do
-    it 'countdown para 1h' do
+    it 'countdown' do
         lembrete = Lembrete.new
         lembrete.titulo = "Consulta medica"
         lembrete.descricao = "Cardiologista"
-        lembrete.expire_at = Time.now + 3600
+        lembrete.expire_at = Time.now + 90061
 
         resp = calcula_countdown(lembrete.expire_at - Time.now)
-        expect(resp).to eq("0 dias, 0 horas, 59 minutos e 59 segundos")
+        expect(resp).to eq("1 dias, 1 horas, 1 minutos e 0 segundos")
     end
 
     it 'countdown expirado' do
