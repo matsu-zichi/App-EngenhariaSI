@@ -305,7 +305,11 @@
         }
       }
     },
+<<<<<<< HEAD
     "timestamp": 1668907267
+=======
+    "timestamp": 1668028422
+>>>>>>> 8e337c805f7dd77cb74b1ae5c059cf99a1a3641a
   },
   "Cucumber Features": {
     "coverage": {
