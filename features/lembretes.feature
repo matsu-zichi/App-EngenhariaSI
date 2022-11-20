@@ -10,10 +10,10 @@ Contexto:
 
 Cenário:
     Quando for na página de lembretes do ambiente
-    E cliclar em 'New lembrete'
+    E clicar em 'New lembrete'
     E preencher "Titulo" com "Lembrete"
     E preecher "Descricao" com "Não se esquecer de fazer as tarefas"
-    E cliclar em "Create Lembrete"
+    E clicar em "Create Lembrete"
     Entao deveria ver "Lembrete was successfully created."
 
 Cenário:
@@ -21,16 +21,16 @@ Cenário:
     E cliclar em 'New lembrete'
     E preencher "Titulo" com "Outro Lembrete"
     E preecher "Descricao" com "Não se esquecer"
-    E cliclar em "Create Lembrete"
+    E clicar em "Create Lembrete"
     E clicar em "Deletar lembrete"
     Então deveria ver "Lembrete was successfully destroyed."
 
 Cenário:
     Quando for na página de lembretes do ambiente
-    E cliclar em 'New lembrete'
+    E clicar em 'New lembrete'
     E preencher "Titulo" com "Lembrete"
     E preecher "Descricao" com "Não se esquecer de fazer as tarefas"
-    E cliclar em "Create Lembrete"
+    E clicar em "Create Lembrete"
     E clicar em "Editar lembrete"
     E preencher "Titulo" com "EDITADO"
     E preecher "Descricao" com "EDITADO"
