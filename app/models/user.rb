@@ -1,6 +1,6 @@
 class User < ApplicationRecord
 
-  has_many :lembretes, dependent: :destroy
+  has_many :ambientes, dependent: :destroy
 
   validates :email, presence: {message: "É necessário informar um endereço de email"}
 

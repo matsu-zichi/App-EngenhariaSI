@@ -1,50 +1,45 @@
 class AmbientesController < ApplicationController
+  before_action :get_user
   before_action :set_ambiente, only: %i[ show edit update destroy ]
-  # GET
-  def new
-    @ambiente = Ambiente.new
+
+  # GET /ambientes or /ambientes.json
+  def index
+    @ambientes = @user.ambientes.order(params[:sort])
   end
-  
+
+  # GET /ambientes/1 or /ambientes/1.json
   def show
-    @ambiente = Ambiente.find(params[:id])
   end
 
+  # GET /ambientes/new
+  def new
+    @ambiente = @user.ambientes.build
+  end
+
+  # GET /ambientes/1/edit
   def edit
-
   end
 
-  # POST
+  # POST /ambientes or /ambientes.json
   def create
-    @ambiente = Ambiente.new(ambiente_params)
+    @ambiente = @user.ambientes.build(ambiente_params)
 
     respond_to do |format|
       if @ambiente.save
-        format.html { redirect_to ambiente_url(@ambiente), notice: "Ambiente criado com sucesso." }
+        format.html { redirect_to user_ambientes_path(@user), notice: "ambiente was successfully created." }
         format.json { render :show, status: :created, location: @ambiente }
       else
-        # render :new, status: :unprocessable_entity, content_type: "text/html"
-        # headers["Content-Type"] = "text/html"
         format.html { render :new, status: :unprocessable_entity }
         format.json { render json: @ambiente.errors, status: :unprocessable_entity }
       end
     end
   end
 
-  def destroy
-    @ambiente = Ambiente.find(params[:id])
-    if @ambiente.present?
-      @ambiente.destroy
-      respond_to do |format|
-        format.html { redirect_to ambientes_url, notice: "Ambiente deletado com sucesso." }
-        format.json { head :no_content }
-      end
-    end
-  end
-
+  # PATCH/PUT /ambientes/1 or /ambientes/1.json
   def update
     respond_to do |format|
       if @ambiente.update(ambiente_params)
-        format.html { redirect_to ambiente_url(@ambiente), notice: "Ambiente atualizado com sucesso." }
+        format.html { redirect_to user_ambiente_path(@user), notice: "ambiente was successfully updated." }
         format.json { render :show, status: :ok, location: @ambiente }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -53,19 +48,29 @@ class AmbientesController < ApplicationController
     end
   end
 
+  # DELETE /ambientes/1 or /ambientes/1.json
+  def destroy
+    @ambiente.destroy
 
-
-  def index
-    # @ambientes = Ambiente.order(:id)
-    @ambientes = Ambiente.order(params[:sort])
+    respond_to do |format|
+      format.html { redirect_to user_ambientes_path(@user), notice: "Ambiente deletado com sucesso." }
+      format.json { head :no_content }
+    end
   end
 
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_ambiente
-      @ambiente = Ambiente.find(params[:id])
+      @ambiente = current_user.ambientes.find(params[:id])
     end
+
+    # Only allow a list of trusted parameters through.
     def ambiente_params
-      params.require(:ambiente).permit(:nome, :descricao)
+      params.require(:ambiente).permit(:nome, :descricao, :user_id)
     end
+
+  private
+    def get_user
+      @user = current_user
+    end 
 end

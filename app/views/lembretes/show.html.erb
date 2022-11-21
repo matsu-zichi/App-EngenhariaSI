@@ -3,6 +3,6 @@
 <%= render @lembrete %>
 
 <div>
-  <%= link_to "Editar lembrete", edit_ambiente_lembrete_path(@ambiente, @lembrete) %> |
-  <%= link_to "Voltar", ambiente_lembretes_path %>
+  <%= link_to "Editar lembrete", edit_user_ambiente_lembrete_path(current_user, @ambiente, @lembrete) %> |
+  <%= link_to "Voltar", user_ambiente_lembretes_path %>
 </div>

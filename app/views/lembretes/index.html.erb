@@ -8,5 +8,5 @@
   <% end %>
 </div>
 
-<%= link_to "New lembrete", new_ambiente_lembrete_path %> <br>
-<%= link_to 'Voltar para ambiente', [@ambiente] %>
+<%= link_to "New lembrete", new_user_ambiente_lembrete_path %> <br>
+<%= link_to 'Voltar para ambiente', user_ambiente_path(current_user, @ambiente) %>

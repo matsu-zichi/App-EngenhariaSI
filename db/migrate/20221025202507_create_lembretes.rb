@@ -4,7 +4,6 @@ class CreateLembretes < ActiveRecord::Migration[7.0]
       t.string :titulo
       t.string :texto
       t.references :ambiente, null: false, foreign_key: true
-      t.references :user, null: false, foreign_key: true
 
       t.timestamps
     end
