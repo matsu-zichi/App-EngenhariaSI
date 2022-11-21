@@ -5,6 +5,6 @@
 <br>
 
 <div>
-  <%= link_to "Detalhes", [@ambiente, @lembrete] %> |
-  <%= link_to "Voltar", ambiente_lembretes_path(@ambiente) %>
+  <%= link_to "Detalhes", [current_user, @ambiente, @lembrete] %> |
+  <%= link_to "Voltar", user_ambiente_lembretes_path(current_user, @ambiente) %>
 </div>

@@ -1,6 +1,18 @@
 Dado('que eu estou na página de visualização do ambiente {string}') do |string|
-   @ambiente = FactoryBot.create(:ambiente, nome: "Faculdade", descricao: "Lembretes da facul")
-   visit "/ambientes/#{@ambiente.id}"
+  @user = User.create!({
+    :email => "usuario@teste.br",
+    :password => "123456",
+    :password_confirmation => "123456"
+  })
+  @user.skip_confirmation!
+  @user.save!
+  @ambiente = FactoryBot.create(:ambiente, nome: "Faculdade", descricao: "Lembretes da facul", user: @user)
+  visit "/"
+  fill_in "Email", :with => "usuario@teste.br"
+  fill_in "Password", :with => "123456"
+  click_on "Log in"
+  click_on "Ambientes"
+  click_on "Show Ambiente"
 end
 
 Quando('eu clico no botao Deletar') do

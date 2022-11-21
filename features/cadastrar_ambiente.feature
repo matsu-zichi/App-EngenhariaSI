@@ -4,7 +4,7 @@ Como usuário
 Para eu poder gerenciar diversos contextos de lembretes
 Eu quero poder criar um novo ambiente dedicado
 
-Cenário: cadastro de novo ambiente com sucesso          
+Cenário: cadastro de novo ambiente com sucesso
     Dado que eu estou na página de cadastro de ambiente 
     Quando eu preencho o campo "nome" com "Faculdade"   
     E clico em criar                                    

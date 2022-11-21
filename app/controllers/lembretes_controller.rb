@@ -26,7 +26,7 @@ class LembretesController < ApplicationController
 
     respond_to do |format|
       if @lembrete.save
-        format.html { redirect_to ambiente_lembretes_path(@ambiente), notice: "Lembrete was successfully created." }
+        format.html { redirect_to user_ambiente_lembretes_path(current_user, @ambiente), notice: "Lembrete was successfully created." }
         format.json { render :show, status: :created, location: @lembrete }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -39,7 +39,7 @@ class LembretesController < ApplicationController
   def update
     respond_to do |format|
       if @lembrete.update(lembrete_params)
-        format.html { redirect_to ambiente_lembrete_path(@ambiente), notice: "Lembrete was successfully updated." }
+        format.html { redirect_to user_ambiente_lembrete_path(current_user, @ambiente), notice: "Lembrete was successfully updated." }
         format.json { render :show, status: :ok, location: @lembrete }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -53,7 +53,7 @@ class LembretesController < ApplicationController
     @lembrete.destroy
 
     respond_to do |format|
-      format.html { redirect_to ambiente_lembretes_path(@ambiente), notice: "Lembrete was successfully destroyed." }
+      format.html { redirect_to user_ambiente_lembretes_path(current_user, @ambiente), notice: "Lembrete was successfully destroyed." }
       format.json { head :no_content }
     end
   end
