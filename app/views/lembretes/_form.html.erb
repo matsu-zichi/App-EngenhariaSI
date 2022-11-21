@@ -23,7 +23,7 @@
 
   <div>
     <%= form.label :data_de_vencimento, style: "display: block" %>
-    <%= form.date_field :expire_at, min: 0.days.ago %>
+    <%= form.datetime_field :expire_at, min: Time.now, step: 1 %>
   </div>
   <br>
   <div>

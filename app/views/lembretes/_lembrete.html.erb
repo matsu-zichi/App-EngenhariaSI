@@ -8,7 +8,20 @@
     <strong>Descrição:</strong>
     <%= lembrete.descricao %>
   </p>
-  
+
+  <% if !lembrete.expire_at.nil? %>
+    <p>
+      <strong>Data de expiração:</strong>
+      <%= lembrete.expire_at.strftime("%d/%m/%Y, %H:%M:%S") %>
+    </p>
+
+    <p>
+      <strong>Tempo restante:</strong>
+      <%= calcula_countdown(lembrete.expire_at - DateTime.now) %> 
+      <%# funcao em lembretes_helper.rb %>
+    </p>
+  <% end %>
+
   <p>
     <%= link_to 'Editar lembrete', edit_user_ambiente_lembrete_path(current_user, @ambiente, lembrete) %>
     <%= button_to "Deletar lembrete", user_ambiente_lembrete_path(current_user, @ambiente, lembrete), method: :delete %>
