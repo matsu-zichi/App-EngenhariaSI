@@ -1,9 +1,10 @@
 Dado('Que estou logado como {string} com a senha {string}') do |string, string2|
-    @user = User.create!({
-        :email => string,
-        :password => string2,
-        :password_confirmation => string2
-    })
+    @user = FactoryBot.create(:user, email: string, password: string2, password_confirmation: string2)
+    # @user = User.create!({
+    #     :email => string,
+    #     :password => string2,
+    #     :password_confirmation => string2
+    # })
     @user.skip_confirmation!
     @user.save!
     visit '/'
@@ -22,7 +23,7 @@ end
 
 Quando('for na página de lembretes do ambiente') do
     visit '/'
-    fill_in "Email",	with: "usuario@teste.br"
+    fill_in "Email",	with: "teste@teste.br"
     fill_in "Password",	with: "123456"
     click_on 'Log in'  
     click_on 'Ambientes'

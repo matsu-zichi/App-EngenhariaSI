@@ -16,7 +16,7 @@ end
 
 Quando('for na página dos ambientes') do
    visit '/'
-   fill_in "Email",	with: "usuario@teste.br"
+   fill_in "Email",	with: "teste@teste.br"
    fill_in "Password",	with: "123456"
    click_on 'Log in'  
    click_on 'Ambientes'
