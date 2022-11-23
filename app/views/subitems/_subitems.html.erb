@@ -1,0 +1,16 @@
+<div id="<%= dom_id subitems %>">
+  <p>
+    <strong>Titulo:</strong>
+    <%= subitems.titulo %>
+  </p>
+
+  <p>
+    <strong>Texto:</strong>
+    <%= subitems.texto %>
+  </p>
+  
+  <p>
+    <%= link_to 'Editar Sub-item', edit_ambiente_lembrete_subitem_path(@ambiente, @lembrete, subitems) %>
+    <%= button_to "Deletar Sub-item", ambiente_lembrete_subitem_path(@ambiente, @lembrete, subitems), method: :delete %>
+  </p>
+</div>

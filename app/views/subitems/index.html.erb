@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Lembretes no ambiente <%= @ambiente.nome %> </h1>
+<h2>Sub-item no lembrete <%= @lembrete.titulo %> </h2>
+
+<div id="subitems">
+  <% @subitems.each do |subitems| %>
+    <%= render subitems %>
+  <% end %>
+</div>
+
+<%= link_to "Adicionar Sub-itens", new_ambiente_lembrete_subitem_path %> |
+<%= link_to 'Voltar para lembrete', ambiente_lembretes_path(@ambiente) %>
+

@@ -26,6 +26,10 @@ class LembretesController < ApplicationController
 
     respond_to do |format|
       if @lembrete.save
+        #Send email
+        if !(@lembrete.email.empty? || @lembrete.email.nil?)
+          OrderMailer.with(lembrete: @lembrete).new_order_email.deliver_now
+        end
         format.html { redirect_to ambiente_lembretes_path(@ambiente), notice: "Lembrete was successfully created." }
         format.json { render :show, status: :created, location: @lembrete }
       else
@@ -66,7 +70,7 @@ class LembretesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def lembrete_params
-      params.require(:lembrete).permit(:titulo, :texto, :ambiente_id, :user_id)
+      params.require(:lembrete).permit(:titulo, :texto, :email, :ambiente_id, :user_id)
     end
 
   private

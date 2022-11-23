@@ -7,7 +7,7 @@ Rails.application.routes.draw do
       get 'list'
     end
     resources :lembretes do
-      resources :subitem
+      resources :subitems
     end
   end
 

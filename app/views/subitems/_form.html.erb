@@ -1,0 +1,29 @@
+<% if subitem.errors.any? %>
+  <div style="color: red">
+    <h2><%= pluralize(subitem.errors.count, "error") %> prohibited this lembrete from being saved:</h2>
+
+    <ul>
+      <% subitem.errors.each do |error| %>
+        <li><%= error.full_message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<%= form_with scope: :subitem, url: ambiente_lembrete_subitems_path, local: true do |form| %>
+
+  <div>
+    <%= form.label :titulo, style: "display: block" %>
+    <%= form.text_field :titulo %>
+  </div>
+
+  <div>
+    <%= form.label :texto, style: "display: block" %>
+    <%= form.text_field :texto %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
+

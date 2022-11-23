@@ -60,3 +60,12 @@ Cenário:
     E preecher "Texto" com ""
     E clicar em "Create Lembrete"
     Então deveria ver "2 errors prohibited this lembrete from being saved:"
+
+Cenário:
+    Quando for na página de lembretes do ambiente
+    E cliclar em 'New lembrete'
+    E preencher "Titulo" com "Lembrete Email"
+    E preencher "Texto" com "Não se esquecer de fazer as tarefas"
+    E preencher email
+    E cliclar em "Create Lembrete"
+    Entao deveria receber o email de confirmacao
