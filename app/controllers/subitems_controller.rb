@@ -49,7 +49,7 @@ class SubitemsController < ApplicationController
         @subitem.destroy
         
         respond_to do |format|
-        format.html { redirect_to ambiente_lembrete_subitems_path(@ambiente, @lembrete), notice: "Lembrete was successfully destroyed." }
+        format.html { redirect_to ambiente_lembrete_subitems_path(@ambiente, @lembrete), notice: "Subitem was successfully destroyed." }
         format.json { head :no_content }
         end
     end

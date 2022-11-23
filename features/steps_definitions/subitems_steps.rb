@@ -25,10 +25,23 @@ Dado('que criei um lembrete {string} com descrição {string}') do |string, stri
   @lembrete.save!
 end
 
+Dado('que criei um subitem {string} com descrição {string}') do |string, string2|
+  @subitem = Subitems.first_or_create!({
+      :titulo => string,
+      :texto => string2,
+      :id_lembrete => @lembrete.id
+  })
+  @subitem.save!
+end
+
 Quando('for na página de cadastro de subitens do lembrete') do
     visit "/ambientes/#{@ambiente.id}/lembretes/#{@lembrete.id}/subitems/new"
-  end
-  
+end
+
+Quando('for na página de edicao do subitem') do
+  visit "/ambientes/#{@ambiente.id}/lembretes/#{@lembrete.id}/subitems/#{@subitem.id}/edit"
+end
+
 Quando('preencho o campo {string} com {string}') do |string, string2|
   fill_in string, :with => string2 
 end

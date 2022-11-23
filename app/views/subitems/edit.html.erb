@@ -34,5 +34,6 @@
 <br>
 
 <div>
+  <%= button_to "Deletar Subitem", ambiente_lembrete_subitem_path(@ambiente, @lembrete, @subitem), method: :delete %>
   <%= link_to "Voltar", ambiente_lembrete_subitems_path(@ambiente, @lembrete) %>
 </div>
