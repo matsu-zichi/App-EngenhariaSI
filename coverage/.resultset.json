@@ -1,8 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/rodrigo/programas/ruby/App-EngenhariaSI/app/models/user.rb": {
-
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/models/user.rb": {
         "lines": [
           1,
           null,
@@ -22,34 +21,26 @@
           null
         ]
       },
-
-      "/home/rodrigo/programas/ruby/App-EngenhariaSI/app/models/application_record.rb": {
-
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/models/application_record.rb": {
         "lines": [
           1,
           1,
           null
         ]
       },
-
-      "/home/rodrigo/programas/ruby/App-EngenhariaSI/app/helpers/ambientes_helper.rb": {
-
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/helpers/ambientes_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-
-      "/home/rodrigo/programas/ruby/App-EngenhariaSI/app/helpers/application_helper.rb": {
-
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/helpers/application_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-
-      "/home/rodrigo/programas/ruby/App-EngenhariaSI/app/helpers/lembretes_helper.rb": {
-
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/helpers/lembretes_helper.rb": {
         "lines": [
           1,
           1,
@@ -74,9 +65,7 @@
           null
         ]
       },
-
-      "/home/rodrigo/programas/ruby/App-EngenhariaSI/app/models/ambiente.rb": {
-
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/models/ambiente.rb": {
         "lines": [
           1,
           null,
@@ -88,9 +77,7 @@
           null
         ]
       },
-
-      "/home/rodrigo/programas/ruby/App-EngenhariaSI/app/models/lembrete.rb": {
-
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/models/lembrete.rb": {
         "lines": [
           1,
           null,
@@ -101,8 +88,7 @@
           null
         ]
       },
-      "/home/rodrigo/programas/ruby/App-EngenhariaSI/app/channels/application_cable/channel.rb": {
-
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/channels/application_cable/channel.rb": {
         "lines": [
           0,
           0,
@@ -112,7 +98,7 @@
         "branches": {
         }
       },
-      "/home/rodrigo/programas/ruby/App-EngenhariaSI/app/channels/application_cable/connection.rb": {
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/channels/application_cable/connection.rb": {
         "lines": [
           0,
           0,
@@ -122,7 +108,7 @@
         "branches": {
         }
       },
-      "/home/rodrigo/programas/ruby/App-EngenhariaSI/app/controllers/ambientes_controller.rb": {
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/controllers/ambientes_controller.rb": {
         "lines": [
           0,
           0,
@@ -195,9 +181,7 @@
           0,
           0,
           null,
-
           0,
-
           0,
           0,
           0,
@@ -206,9 +190,7 @@
         "branches": {
         }
       },
-
-      "/home/rodrigo/programas/ruby/App-EngenhariaSI/app/controllers/application_controller.rb": {
-
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/controllers/application_controller.rb": {
         "lines": [
           0,
           null,
@@ -217,9 +199,7 @@
         "branches": {
         }
       },
-
-      "/home/rodrigo/programas/ruby/App-EngenhariaSI/app/controllers/home_controller.rb": {
-
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/controllers/home_controller.rb": {
         "lines": [
           0,
           0,
@@ -230,9 +210,7 @@
         "branches": {
         }
       },
-
-      "/home/rodrigo/programas/ruby/App-EngenhariaSI/app/controllers/lembretes_controller.rb": {
-
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/controllers/lembretes_controller.rb": {
         "lines": [
           0,
           0,
@@ -315,7 +293,7 @@
         "branches": {
         }
       },
-      "/home/rodrigo/programas/ruby/App-EngenhariaSI/app/jobs/application_job.rb": {
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/jobs/application_job.rb": {
         "lines": [
           0,
           null,
@@ -328,7 +306,7 @@
         "branches": {
         }
       },
-      "/home/rodrigo/programas/ruby/App-EngenhariaSI/app/mailers/application_mailer.rb": {
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/mailers/application_mailer.rb": {
         "lines": [
           0,
           0,
@@ -339,11 +317,11 @@
         }
       }
     },
-    "timestamp": 1669066826
+    "timestamp": 1669079925
   },
   "Cucumber Features": {
     "coverage": {
-      "/home/rodrigo/programas/ruby/App-EngenhariaSI/app/models/user.rb": {
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/models/user.rb": {
         "lines": [
           1,
           null,
@@ -363,90 +341,37 @@
           null
         ]
       },
-      "/home/rodrigo/programas/ruby/App-EngenhariaSI/app/models/application_record.rb": {
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/models/application_record.rb": {
         "lines": [
           1,
           1,
           null
         ]
       },
-      "/home/rodrigo/programas/ruby/App-EngenhariaSI/app/helpers/ambientes_helper.rb": {
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/helpers/ambientes_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/home/rodrigo/programas/ruby/App-EngenhariaSI/app/helpers/application_helper.rb": {
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/helpers/application_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/home/rodrigo/programas/ruby/App-EngenhariaSI/app/helpers/lembretes_helper.rb": {
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/helpers/lembretes_helper.rb": {
         "lines": [
           1,
-          null
-        ]
-      },
-      "/home/rodrigo/programas/ruby/App-EngenhariaSI/app/controllers/home_controller.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/home/rodrigo/programas/ruby/App-EngenhariaSI/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null,
-          null
-        ]
-      },
-      "/home/rodrigo/programas/ruby/App-EngenhariaSI/app/controllers/ambientes_controller.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          18,
-          null,
-          null,
-          null,
-          1,
-          null,
-          null,
-          null,
-          1,
-          2,
-          null,
-          null,
-          null,
-          1,
-          null,
-          null,
-          null,
-          1,
-          2,
-          null,
-          2,
-          2,
-          2,
-          1,
-          null,
-          2,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
           1,
           0,
+          null,
           0,
+          0,
+          null,
+          0,
+          0,
+          null,
           0,
           0,
           null,
@@ -454,6 +379,78 @@
           0,
           null,
           null,
+          0,
+          0,
+          null,
+          null
+        ]
+      },
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/controllers/home_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/controllers/ambientes_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          20,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          2,
+          null,
+          2,
+          2,
+          2,
+          1,
+          null,
+          2,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          1,
+          null,
+          2,
+          1,
+          null,
+          null,
           null,
           null,
           null,
@@ -469,22 +466,22 @@
           1,
           null,
           1,
-          9,
+          16,
           null,
           null,
           null,
           1,
-          2,
+          4,
           null,
           null,
           1,
           1,
-          31,
+          40,
           null,
           null
         ]
       },
-      "/home/rodrigo/programas/ruby/App-EngenhariaSI/app/models/ambiente.rb": {
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/models/ambiente.rb": {
         "lines": [
           1,
           null,
@@ -496,7 +493,7 @@
           null
         ]
       },
-      "/home/rodrigo/programas/ruby/App-EngenhariaSI/app/models/lembrete.rb": {
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/models/lembrete.rb": {
         "lines": [
           1,
           null,
@@ -507,7 +504,7 @@
           null
         ]
       },
-      "/home/rodrigo/programas/ruby/App-EngenhariaSI/app/controllers/lembretes_controller.rb": {
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/controllers/lembretes_controller.rb": {
         "lines": [
           1,
           1,
@@ -588,7 +585,7 @@
           null
         ]
       },
-      "/home/rodrigo/programas/ruby/App-EngenhariaSI/app/channels/application_cable/channel.rb": {
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/channels/application_cable/channel.rb": {
         "lines": [
           0,
           0,
@@ -598,7 +595,7 @@
         "branches": {
         }
       },
-      "/home/rodrigo/programas/ruby/App-EngenhariaSI/app/channels/application_cable/connection.rb": {
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/channels/application_cable/connection.rb": {
         "lines": [
           0,
           0,
@@ -608,8 +605,7 @@
         "branches": {
         }
       },
-      "/home/rodrigo/programas/ruby/App-EngenhariaSI/app/jobs/application_job.rb": {
-
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/jobs/application_job.rb": {
         "lines": [
           0,
           null,
@@ -622,9 +618,7 @@
         "branches": {
         }
       },
-
-      "/home/rodrigo/programas/ruby/App-EngenhariaSI/app/mailers/application_mailer.rb": {
-
+      "/home/matsumoto/trabalhos_each/engenharia_si/app/mailers/application_mailer.rb": {
         "lines": [
           0,
           0,
@@ -635,8 +629,6 @@
         }
       }
     },
-
-    "timestamp": 1669066831
-
+    "timestamp": 1669079930
   }
 }

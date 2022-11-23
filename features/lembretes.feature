@@ -5,7 +5,7 @@ Como um usuário, eu quero adicionar um item para que eu possa ser alertado
 sobre a data de expiração desse item.
 
 Contexto: 
-    Dado Que estou logado como "usuario@teste.br" com a senha "123456"
+    Dado Que estou logado como "teste@teste.br" com a senha "123456"
     Dado que já criei um ambiente "Teste" com descrição "Um ambiente"
 
 Cenário:
