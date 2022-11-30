@@ -10,12 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_11_23_033158) do
+ActiveRecord::Schema[7.0].define(version: 2022_11_30_020052) do
   create_table "ambientes", force: :cascade do |t|
     t.string "nome"
     t.string "descricao"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "user_id", null: false
+    t.index ["user_id"], name: "index_ambientes_on_user_id"
   end
 
   create_table "lembretes", force: :cascade do |t|
@@ -24,6 +26,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_23_033158) do
     t.integer "ambiente_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.datetime "expire_at", precision: nil
     t.string "email"
     t.index ["ambiente_id"], name: "index_lembretes_on_ambiente_id"
   end
@@ -33,7 +36,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_23_033158) do
     t.string "texto"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "id_lembrete"
+    t.integer "lembrete_id", null: false
+    t.index ["lembrete_id"], name: "index_subitems_on_lembrete_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -58,5 +62,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_23_033158) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "ambientes", "users"
   add_foreign_key "lembretes", "ambientes"
+  add_foreign_key "subitems", "lembretes"
 end

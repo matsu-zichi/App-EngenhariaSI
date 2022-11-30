@@ -1,4 +1,4 @@
-<%= form_with(model: [@ambiente, lembrete], local: true) do |form| %>
+<%= form_with(model: [current_user, @ambiente, lembrete], local: true) do |form| %>
   <% if lembrete.errors.any? %>
     <div style="color: red">
       <h2><%= pluralize(lembrete.errors.count, "error") %> prohibited this lembrete from being saved:</h2>
@@ -22,10 +22,15 @@
   </div>
 
   <div>
-    <%= form.label :email, style: "display: block" %>
-    <%= form.text_field :email %>
+    <%= form.label :data_de_vencimento, style: "display: block" %>
+    <%= form.datetime_field :expire_at, min: Time.now, step: 1 %>
   </div>
-
+  <div>
+    <%= form.label :email, style: "display: block" %>
+    <%= form.text_field :email, value:current_user.email %>
+  </div>
+  
+  <br>
   <div>
     <%= form.submit %>
   </div>

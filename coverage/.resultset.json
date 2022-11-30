@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/mnt/d/estudos/faculdade/10 semestre/esi/App-EngenhariaSI/app/models/user.rb": {
+      "/home/victor/App-EngenhariaSI/app/models/user.rb": {
         "lines": [
           1,
           null,
@@ -21,38 +21,111 @@
           null
         ]
       },
-      "/mnt/d/estudos/faculdade/10 semestre/esi/App-EngenhariaSI/app/models/application_record.rb": {
+      "/home/victor/App-EngenhariaSI/app/models/application_record.rb": {
         "lines": [
           1,
           1,
           null
         ]
       },
-      "/mnt/d/estudos/faculdade/10 semestre/esi/App-EngenhariaSI/app/helpers/ambientes_helper.rb": {
+      "/home/victor/App-EngenhariaSI/app/helpers/ambientes_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/mnt/d/estudos/faculdade/10 semestre/esi/App-EngenhariaSI/app/helpers/application_helper.rb": {
+      "/home/victor/App-EngenhariaSI/app/helpers/application_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/mnt/d/estudos/faculdade/10 semestre/esi/App-EngenhariaSI/app/helpers/lembretes_helper.rb": {
+      "/home/victor/App-EngenhariaSI/app/helpers/lembretes_helper.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          null,
+          2,
+          1,
+          null,
+          2,
+          1,
+          null,
+          2,
+          1,
+          null,
+          2,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/victor/App-EngenhariaSI/app/helpers/subitems_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/mnt/d/estudos/faculdade/10 semestre/esi/App-EngenhariaSI/app/helpers/subitem_helper.rb": {
+      "/home/victor/App-EngenhariaSI/app/mailers/order_mailer.rb": {
         "lines": [
+          1,
+          1,
+          0,
+          null,
+          0,
+          null,
+          null
+        ]
+      },
+      "/home/victor/App-EngenhariaSI/app/mailers/application_mailer.rb": {
+        "lines": [
+          1,
+          1,
           1,
           null
         ]
       },
-      "/mnt/d/estudos/faculdade/10 semestre/esi/App-EngenhariaSI/app/channels/application_cable/channel.rb": {
+      "/home/victor/App-EngenhariaSI/app/models/ambiente.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null
+        ]
+      },
+      "/home/victor/App-EngenhariaSI/app/models/lembrete.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/victor/App-EngenhariaSI/app/models/subitem.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/victor/App-EngenhariaSI/app/channels/application_cable/channel.rb": {
         "lines": [
           0,
           0,
@@ -62,7 +135,7 @@
         "branches": {
         }
       },
-      "/mnt/d/estudos/faculdade/10 semestre/esi/App-EngenhariaSI/app/channels/application_cable/connection.rb": {
+      "/home/victor/App-EngenhariaSI/app/channels/application_cable/connection.rb": {
         "lines": [
           0,
           0,
@@ -72,104 +145,7 @@
         "branches": {
         }
       },
-      "/mnt/d/estudos/faculdade/10 semestre/esi/App-EngenhariaSI/app/controllers/ambientes_controller.rb": {
-        "lines": [
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          null,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          null,
-          null,
-          0,
-          null,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/mnt/d/estudos/faculdade/10 semestre/esi/App-EngenhariaSI/app/controllers/application_controller.rb": {
-        "lines": [
-          0,
-          null,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/mnt/d/estudos/faculdade/10 semestre/esi/App-EngenhariaSI/app/controllers/home_controller.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/mnt/d/estudos/faculdade/10 semestre/esi/App-EngenhariaSI/app/controllers/lembretes_controller.rb": {
+      "/home/victor/App-EngenhariaSI/app/controllers/ambientes_controller.rb": {
         "lines": [
           0,
           0,
@@ -238,86 +214,6 @@
           0,
           null,
           null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/mnt/d/estudos/faculdade/10 semestre/esi/App-EngenhariaSI/app/controllers/subitem_controller.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          null,
-          0,
-          null,
-          0,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
           0,
           0,
           0,
@@ -331,30 +227,16 @@
         "branches": {
         }
       },
-      "/mnt/d/estudos/faculdade/10 semestre/esi/App-EngenhariaSI/app/jobs/application_job.rb": {
+      "/home/victor/App-EngenhariaSI/app/controllers/application_controller.rb": {
         "lines": [
           0,
-          null,
-          null,
-          null,
-          null,
           null,
           0
         ],
         "branches": {
         }
       },
-      "/mnt/d/estudos/faculdade/10 semestre/esi/App-EngenhariaSI/app/mailers/application_mailer.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/mnt/d/estudos/faculdade/10 semestre/esi/App-EngenhariaSI/app/mailers/order_mailer.rb": {
+      "/home/victor/App-EngenhariaSI/app/controllers/home_controller.rb": {
         "lines": [
           0,
           0,
@@ -365,47 +247,195 @@
         "branches": {
         }
       },
-      "/mnt/d/estudos/faculdade/10 semestre/esi/App-EngenhariaSI/app/models/ambiente.rb": {
+      "/home/victor/App-EngenhariaSI/app/controllers/lembretes_controller.rb": {
+        "lines": [
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/victor/App-EngenhariaSI/app/controllers/subitems_controller.rb": {
         "lines": [
           0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
           null,
           0,
           null,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
           0,
           0
         ],
         "branches": {
         }
       },
-      "/mnt/d/estudos/faculdade/10 semestre/esi/App-EngenhariaSI/app/models/lembrete.rb": {
-        "lines": [
-          0,
-          0,
-          null,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/mnt/d/estudos/faculdade/10 semestre/esi/App-EngenhariaSI/app/models/subitem.rb": {
+      "/home/victor/App-EngenhariaSI/app/jobs/application_job.rb": {
         "lines": [
           0,
           null,
-          0,
-          0,
+          null,
+          null,
+          null,
+          null,
           0
         ],
         "branches": {
         }
       }
     },
-    "timestamp": 1669168967
+    "timestamp": 1669783375
   },
   "Cucumber Features": {
     "coverage": {
-      "/mnt/d/estudos/faculdade/10 semestre/esi/App-EngenhariaSI/app/models/user.rb": {
+      "/home/victor/App-EngenhariaSI/app/models/user.rb": {
         "lines": [
           1,
           null,
@@ -425,61 +455,37 @@
           null
         ]
       },
-      "/mnt/d/estudos/faculdade/10 semestre/esi/App-EngenhariaSI/app/models/application_record.rb": {
+      "/home/victor/App-EngenhariaSI/app/models/application_record.rb": {
         "lines": [
           1,
           1,
           null
         ]
       },
-      "/mnt/d/estudos/faculdade/10 semestre/esi/App-EngenhariaSI/app/controllers/ambientes_controller.rb": {
+      "/home/victor/App-EngenhariaSI/app/helpers/ambientes_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/victor/App-EngenhariaSI/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/victor/App-EngenhariaSI/app/helpers/lembretes_helper.rb": {
         "lines": [
           1,
           1,
+          0,
           null,
-          1,
-          6,
-          null,
-          null,
-          1,
-          10,
-          null,
-          null,
-          1,
-          null,
-          null,
-          null,
-          null,
-          1,
-          2,
-          null,
-          2,
-          2,
-          2,
-          1,
-          null,
-          null,
-          null,
-          2,
-          1,
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          2,
-          1,
-          null,
-          null,
-          null,
-          null,
-          1,
           0,
           0,
+          null,
+          0,
+          0,
+          null,
           0,
           0,
           null,
@@ -487,87 +493,53 @@
           0,
           null,
           null,
+          0,
+          0,
           null,
+          null
+        ]
+      },
+      "/home/victor/App-EngenhariaSI/app/helpers/subitems_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/victor/App-EngenhariaSI/app/controllers/home_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/victor/App-EngenhariaSI/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/victor/App-EngenhariaSI/app/controllers/ambientes_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          30,
           null,
           null,
           null,
           1,
           null,
-          10,
           null,
-          null,
-          1,
-          null,
-          1,
-          11,
           null,
           1,
           2,
           null,
-          null
-        ]
-      },
-      "/mnt/d/estudos/faculdade/10 semestre/esi/App-EngenhariaSI/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null,
-          null
-        ]
-      },
-      "/mnt/d/estudos/faculdade/10 semestre/esi/App-EngenhariaSI/app/helpers/application_helper.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/mnt/d/estudos/faculdade/10 semestre/esi/App-EngenhariaSI/app/helpers/ambientes_helper.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/mnt/d/estudos/faculdade/10 semestre/esi/App-EngenhariaSI/app/helpers/lembretes_helper.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/mnt/d/estudos/faculdade/10 semestre/esi/App-EngenhariaSI/app/helpers/subitems_helper.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/mnt/d/estudos/faculdade/10 semestre/esi/App-EngenhariaSI/app/models/ambiente.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          null,
-          1,
-          null
-        ]
-      },
-      "/mnt/d/estudos/faculdade/10 semestre/esi/App-EngenhariaSI/app/models/lembrete.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          1,
-          null
-        ]
-      },
-      "/mnt/d/estudos/faculdade/10 semestre/esi/App-EngenhariaSI/app/controllers/lembretes_controller.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          12,
-          null,
           null,
           null,
           1,
@@ -575,23 +547,115 @@
           null,
           null,
           1,
-          7,
+          2,
+          null,
+          2,
+          2,
+          2,
+          1,
+          null,
+          2,
+          1,
           null,
           null,
           null,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          1,
+          null,
+          2,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          2,
           1,
           null,
           null,
           null,
           1,
-          7,
           null,
-          7,
-          7,
+          1,
+          26,
           null,
+          null,
+          null,
+          1,
           4,
+          null,
+          null,
+          1,
+          1,
+          60,
+          null,
+          null
+        ]
+      },
+      "/home/victor/App-EngenhariaSI/app/models/ambiente.rb": {
+        "lines": [
           1,
           null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null
+        ]
+      },
+      "/home/victor/App-EngenhariaSI/app/models/lembrete.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/victor/App-EngenhariaSI/app/controllers/lembretes_controller.rb": {
+        "lines": [
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          21,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          7,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          7,
+          null,
+          7,
+          7,
           8,
           4,
           null,
@@ -631,6 +695,92 @@
           null,
           null,
           null,
+          1,
+          8,
+          null,
+          null,
+          1,
+          1,
+          39,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/victor/App-EngenhariaSI/app/models/subitem.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/victor/App-EngenhariaSI/app/controllers/subitems_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          12,
+          null,
+          null,
+          1,
+          4,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          4,
+          null,
+          4,
+          4,
+          2,
+          1,
+          null,
+          6,
+          3,
+          null,
+          null,
+          null,
+          null,
+          1,
+          4,
+          4,
+          2,
+          1,
+          null,
+          6,
+          3,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          2,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
           1,
           8,
           null,
@@ -640,112 +790,9 @@
           30,
           null,
           null,
-          null
-        ]
-      },
-      "/mnt/d/estudos/faculdade/10 semestre/esi/App-EngenhariaSI/app/mailers/order_mailer.rb": {
-        "lines": [
           1,
           1,
-          1,
-          null,
-          1,
-          null,
-          null
-        ]
-      },
-      "/mnt/d/estudos/faculdade/10 semestre/esi/App-EngenhariaSI/app/mailers/application_mailer.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null
-        ]
-      },
-      "/mnt/d/estudos/faculdade/10 semestre/esi/App-EngenhariaSI/app/controllers/home_controller.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/mnt/d/estudos/faculdade/10 semestre/esi/App-EngenhariaSI/app/controllers/subitems_controller.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          3,
-          null,
-          null,
-          1,
-          4,
-          null,
-          null,
-          1,
-          0,
-          null,
-          null,
-          1,
-          null,
-          null,
-          null,
-          1,
-          4,
-          null,
-          4,
-          4,
-          2,
-          1,
-          null,
-          6,
-          3,
-          null,
-          null,
-          null,
-          null,
-          1,
-          4,
-          4,
-          2,
-          1,
-          null,
-          6,
-          3,
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          2,
-          1,
-          null,
-          null,
-          null,
-          1,
-          null,
-          null,
-          null,
-          1,
-          1,
-          8,
-          null,
-          null,
-          1,
-          1,
-          21,
-          null,
-          null,
-          1,
-          1,
-          21,
+          30,
           null,
           null,
           1,
@@ -755,16 +802,7 @@
           null
         ]
       },
-      "/mnt/d/estudos/faculdade/10 semestre/esi/App-EngenhariaSI/app/models/subitems.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          null
-        ]
-      },
-      "/mnt/d/estudos/faculdade/10 semestre/esi/App-EngenhariaSI/app/channels/application_cable/channel.rb": {
+      "/home/victor/App-EngenhariaSI/app/channels/application_cable/channel.rb": {
         "lines": [
           0,
           0,
@@ -774,7 +812,7 @@
         "branches": {
         }
       },
-      "/mnt/d/estudos/faculdade/10 semestre/esi/App-EngenhariaSI/app/channels/application_cable/connection.rb": {
+      "/home/victor/App-EngenhariaSI/app/channels/application_cable/connection.rb": {
         "lines": [
           0,
           0,
@@ -784,7 +822,7 @@
         "branches": {
         }
       },
-      "/mnt/d/estudos/faculdade/10 semestre/esi/App-EngenhariaSI/app/jobs/application_job.rb": {
+      "/home/victor/App-EngenhariaSI/app/jobs/application_job.rb": {
         "lines": [
           0,
           null,
@@ -792,12 +830,35 @@
           null,
           null,
           null,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/victor/App-EngenhariaSI/app/mailers/application_mailer.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/victor/App-EngenhariaSI/app/mailers/order_mailer.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
           0
         ],
         "branches": {
         }
       }
     },
-    "timestamp": 1669243417
+    "timestamp": 1669789824
   }
 }

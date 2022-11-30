@@ -18,12 +18,12 @@
             <td><%= ambiente.nome %></td>
             <td><%= ambiente.descricao %></td>
             <td><%= ambiente.created_at %></td>
-            <td><%= link_to "Show Ambiente", ambiente, class: "btn btn-info"%></td>
-            <td><%= link_to "Edit Ambiente", edit_ambiente_path(ambiente), class:"btn btn-warning" %></td>
+            <td><%= link_to "Show Ambiente", user_ambiente_path(@user, ambiente), class: "btn btn-info"%></td>
+            <td><%= link_to "Edit Ambiente", edit_user_ambiente_path(@user, ambiente), class:"btn btn-warning" %></td>
         </tr>
       <% end %>
       </tbody>
     </table>
 
 </div>
-<%= link_to "New Ambiente", new_ambiente_path, class: "btn btn-secondary" %>
+<%= link_to "New Ambiente", new_user_ambiente_path, class: "btn btn-secondary" %>

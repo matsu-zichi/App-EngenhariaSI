@@ -1,3 +1,4 @@
+
 class LembretesController < ApplicationController
   before_action :get_ambiente
   before_action :set_lembrete, only: %i[ show edit update destroy ]
@@ -26,11 +27,7 @@ class LembretesController < ApplicationController
 
     respond_to do |format|
       if @lembrete.save
-        #Send email
-        if !(@lembrete.email.empty? || @lembrete.email.nil?)
-          OrderMailer.with(lembrete: @lembrete).new_order_email.deliver_now
-        end
-        format.html { redirect_to ambiente_lembretes_path(@ambiente), notice: "Lembrete was successfully created." }
+        format.html { redirect_to user_ambiente_lembretes_path(current_user, @ambiente), notice: "Lembrete was successfully created." }
         format.json { render :show, status: :created, location: @lembrete }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -43,7 +40,7 @@ class LembretesController < ApplicationController
   def update
     respond_to do |format|
       if @lembrete.update(lembrete_params)
-        format.html { redirect_to ambiente_lembrete_path(@ambiente), notice: "Lembrete was successfully updated." }
+        format.html { redirect_to user_ambiente_lembrete_path(current_user, @ambiente), notice: "Lembrete was successfully updated." }
         format.json { render :show, status: :ok, location: @lembrete }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -57,7 +54,7 @@ class LembretesController < ApplicationController
     @lembrete.destroy
 
     respond_to do |format|
-      format.html { redirect_to ambiente_lembretes_path(@ambiente), notice: "Lembrete was successfully destroyed." }
+      format.html { redirect_to user_ambiente_lembretes_path(current_user, @ambiente), notice: "Lembrete was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -70,7 +67,7 @@ class LembretesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def lembrete_params
-      params.require(:lembrete).permit(:titulo, :texto, :email, :ambiente_id, :user_id)
+      params.require(:lembrete).permit(:titulo, :texto, :expire_at, :email, :ambiente_id, :user_id)
     end
 
   private

@@ -4,11 +4,11 @@ class SubitemsController < ApplicationController
     before_action :set_subitem, only: %i[ show edit update destroy ]
 
     def index
-        @subitems = Subitems.order(:id)
+        @subitems = Subitem.order(:id)
     end
 
     def new
-        @subitem = Subitems.new
+        @subitem = Subitem.new
     end
 
     def show
@@ -20,11 +20,11 @@ class SubitemsController < ApplicationController
     end
 
     def create
-        @subitem = Subitems.new(subitem_params)
+        @subitem = @lembrete.subitems.build(subitem_params)
 
         respond_to do |format|
             if @subitem.save
-              format.html { redirect_to ambiente_lembrete_subitems_path(@ambiente, @lembrete), notice: "Subitem was successfully created." }
+              format.html { redirect_to user_ambiente_lembrete_subitems_path(current_user, @ambiente, @lembrete), notice: "Subitem was successfully created." }
               format.json { render :show, status: :created, location: @subitem }
             else
               format.html { render :new, status: :unprocessable_entity }
@@ -36,7 +36,7 @@ class SubitemsController < ApplicationController
     def update
         respond_to do |format|
             if @subitem.update(subitem_params)
-              format.html { redirect_to ambiente_lembrete_subitems_path(@ambiente, @lembrete), notice: "Subitem was successfully updated." }
+              format.html { redirect_to user_ambiente_lembrete_subitems_path(current_user, @ambiente, @lembrete), notice: "Subitem was successfully updated." }
               format.json { render :show, status: :ok, location: @subitem }
             else
               format.html { render :edit, status: :unprocessable_entity }
@@ -49,7 +49,7 @@ class SubitemsController < ApplicationController
         @subitem.destroy
         
         respond_to do |format|
-        format.html { redirect_to ambiente_lembrete_subitems_path(@ambiente, @lembrete), notice: "Subitem was successfully destroyed." }
+        format.html { redirect_to user_ambiente_lembrete_subitems_path(current_user, @ambiente, @lembrete), notice: "Subitem was successfully destroyed." }
         format.json { head :no_content }
         end
     end
@@ -75,6 +75,6 @@ class SubitemsController < ApplicationController
 
     private
     def set_subitem
-        @subitem = Subitems.find(params['id'])
+        @subitem = Subitem.find(params[:id])
     end
 end

@@ -5,6 +5,6 @@
 <br>
 
 <div>
-  <%= link_to "Ver detalhes desse ambiente", @ambiente %> |
-  <%= link_to "Voltar para Ambientes", ambientes_path %>
+  <%= link_to "Ver detalhes desse ambiente", [@user, @ambiente] %> |
+  <%= link_to "Voltar para Ambientes", user_ambientes_path(@user) %>
 </div>

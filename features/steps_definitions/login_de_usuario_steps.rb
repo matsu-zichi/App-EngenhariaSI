@@ -41,6 +41,10 @@ Quando('clicar em {string}') do |string|
     click_on string
 end
 
+Quando('cliclar em {string}') do |string|
+    click_on string
+end
+
 Então('Deve receber um aviso de credenciais incorretas') do
     expect(page).to have_content('Invalid Email or password.')
 end

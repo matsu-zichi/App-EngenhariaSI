@@ -1,5 +1,18 @@
 Dado('que eu estou na página de cadastro de ambiente') do
-  visit "/ambientes/new"
+  @user = FactoryBot.create(:user, email: "teste@teste.br", password: "123456", password_confirmation: "123456")
+  # @user = User.create!({
+  #   :email => "usuario@teste.br",
+  #   :password => "123456",
+  #   :password_confirmation => "123456"
+  # })
+  @user.skip_confirmation!
+  @user.save!
+  visit "/"
+  fill_in "Email", :with => "teste@teste.br"
+  fill_in "Password", :with => "123456"
+  click_on "Log in"
+  click_on "Ambientes"
+  click_on "New Ambiente"
 end
 
 Quando('eu preencho o campo {string} com {string}') do |string, string2|

@@ -2,12 +2,14 @@ Rails.application.routes.draw do
 
   root 'home#index'
   
-  resources :ambientes do
-    collection do
-      get 'list'
-    end
-    resources :lembretes do
-      resources :subitems
+  resources :user do
+    resources :ambientes do
+      collection do
+        get 'list'
+      end
+      resources :lembretes do
+        resources :subitems
+      end
     end
   end
 

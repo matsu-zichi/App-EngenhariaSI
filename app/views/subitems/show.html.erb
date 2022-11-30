@@ -9,6 +9,6 @@
 </p>
 
 <p>
-    <%= link_to 'Editar Sub-item', edit_ambiente_lembrete_subitem_path(@ambiente, @lembrete, @subitem) %>
-    <%= button_to "Deletar Sub-item", ambiente_lembrete_subitem_path(@ambiente, @lembrete, @subitem), method: :delete %>
-  </p>
+  <%= link_to 'Editar Sub-item', edit_user_ambiente_lembrete_subitem_path(current_user, @ambiente, @lembrete, @subitem) %>
+  <%= button_to "Deletar Sub-item", user_ambiente_lembrete_subitem_path(current_user, @ambiente, @lembrete, @subitem), method: :delete %>
+</p>

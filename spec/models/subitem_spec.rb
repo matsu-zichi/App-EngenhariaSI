@@ -1,8 +1,8 @@
 require 'rails_helper'
 
-RSpec.describe Subitemss, type: :model do
+RSpec.describe Subitem, type: :model do
   it 'possui um titulo e um texto' do
-    subitem = Subitemss.new
+    subitem = Subitem.new
     subitem.titulo = ""
     subitem.texto = ""
     subitem.validate

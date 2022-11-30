@@ -1,39 +1,10 @@
 <h1>Edit Subitem</h1>
 
-<% if @subitem.errors.any? %>
-  <div style="color: red">
-    <h2><%= pluralize(@subitem.errors.count, "error") %> prohibited this lembrete from being saved:</h2>
-
-    <ul>
-      <% @subitem.errors.each do |error| %>
-        <li><%= error.full_message %></li>
-      <% end %>
-    </ul>
-  </div>
-<% end %>
-
-<%= form_with scope: :subitem, url: ambiente_lembrete_subitem_path, local: true, method: :PATCH do |form| %>
-
-  <div>
-    <%= form.label :titulo, style: "display: block" %>
-    <%= form.text_field :titulo %>
-  </div>
-
-  <div>
-    <%= form.label :texto, style: "display: block" %>
-    <%= form.text_field :texto %>
-  </div>
-
-  <div>
-    <%= form.submit %>
-  </div>
-<% end %>
-
-
+<%= render "form", subitem: @subitem %>
 
 <br>
 
 <div>
-  <%= button_to "Deletar Subitem", ambiente_lembrete_subitem_path(@ambiente, @lembrete, @subitem), method: :delete %>
-  <%= link_to "Voltar", ambiente_lembrete_subitems_path(@ambiente, @lembrete) %>
+  <%= button_to "Deletar Subitem", user_ambiente_lembrete_subitem_path(current_user, @ambiente, @lembrete, @subitem), method: :delete %>
+  <%= link_to "Voltar", user_ambiente_lembrete_subitems_path(current_user, @ambiente, @lembrete) %>
 </div>

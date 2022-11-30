@@ -4,19 +4,19 @@ Como usuário
 Para eu poder gerenciar diversos contextos de lembretes
 Eu quero poder ordenar meu ambientes
 
+Contexto: 
+    Dado Que estou logado como "teste@teste.br" com a senha "123456"
+    Dado que já criei um ambiente "Faculdade" com descrição "Lembretes das provas e trabalhos"
+    Dado que já criei um ambiente "Cozinha" com descrição "Lembretes de data de validade"
+
   Cenário: ordenar ambientes por nome
-   Dado que estou na página dos ambientes
-   Quando cadastro o ambiente com "Faculdade" e "Lembretes das provas e trabalhos"
-   E cadastro um outro ambiente com "Cozinha" e "Lembretes de data de validade"
-   E volto para a tela dos ambientes
-   E clico no link "Nome"
+   Quando for na página dos ambientes
+   E clicar em "Nome"
    Então devo ver o ambiente "Cozinha" antes do ambiente "Faculdade"
    
 
   Cenário: ordenar ambientes por data de criação
-   Dado que estou na página dos ambientes
-   Quando cadastro o ambiente com "Faculdade" e "Lembretes das provas e trabalhos"
-   E cadastro um outro ambiente com "Cozinha" e "Lembretes de data de validade"
-   E volto para a tela dos ambientes
-   E clico no link "Data de Criação"
+   Quando for na página dos ambientes
+   E clicar em "Nome"
+   E clicar "Data de Criação"
    Então devo ver o ambiente "Faculdade" antes do ambiente "Cozinha"
