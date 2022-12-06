@@ -20,6 +20,12 @@
       <%= calcula_countdown(lembrete.expire_at - DateTime.now) %> 
       <%# funcao em lembretes_helper.rb %>
     </p>
+    
+    <p>
+      <strong>Prioridade:</strong>
+      <%= lembrete.prioridade %> 
+      <%# funcao em lembretes_helper.rb %>
+    </p>
   <% end %>
 
   <p>
