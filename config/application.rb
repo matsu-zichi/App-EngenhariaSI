@@ -21,6 +21,7 @@ module EngenhariaSi
 
     config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
     config.time_zone = "Brasilia"
+    #config.i18n.default_locale = "pt-BR"
 
   end
 end
