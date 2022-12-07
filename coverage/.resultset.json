@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/victor/App-EngenhariaSI/app/models/user.rb": {
+      "/home/victor/EngSI/app/models/user.rb": {
         "lines": [
           1,
           null,
@@ -21,26 +21,26 @@
           null
         ]
       },
-      "/home/victor/App-EngenhariaSI/app/models/application_record.rb": {
+      "/home/victor/EngSI/app/models/application_record.rb": {
         "lines": [
           1,
           1,
           null
         ]
       },
-      "/home/victor/App-EngenhariaSI/app/helpers/ambientes_helper.rb": {
+      "/home/victor/EngSI/app/helpers/ambientes_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/home/victor/App-EngenhariaSI/app/helpers/application_helper.rb": {
+      "/home/victor/EngSI/app/helpers/application_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/home/victor/App-EngenhariaSI/app/helpers/lembretes_helper.rb": {
+      "/home/victor/EngSI/app/helpers/lembretes_helper.rb": {
         "lines": [
           1,
           1,
@@ -65,13 +65,13 @@
           null
         ]
       },
-      "/home/victor/App-EngenhariaSI/app/helpers/subitems_helper.rb": {
+      "/home/victor/EngSI/app/helpers/subitems_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/home/victor/App-EngenhariaSI/app/mailers/order_mailer.rb": {
+      "/home/victor/EngSI/app/mailers/order_mailer.rb": {
         "lines": [
           1,
           1,
@@ -82,7 +82,7 @@
           null
         ]
       },
-      "/home/victor/App-EngenhariaSI/app/mailers/application_mailer.rb": {
+      "/home/victor/EngSI/app/mailers/application_mailer.rb": {
         "lines": [
           1,
           1,
@@ -90,7 +90,7 @@
           null
         ]
       },
-      "/home/victor/App-EngenhariaSI/app/models/ambiente.rb": {
+      "/home/victor/EngSI/app/models/ambiente.rb": {
         "lines": [
           1,
           null,
@@ -102,22 +102,11 @@
           null
         ]
       },
-      "/home/victor/App-EngenhariaSI/app/models/lembrete.rb": {
+      "/home/victor/EngSI/app/models/lembrete.rb": {
         "lines": [
           1,
           null,
           1,
-          1,
-          null,
-          1,
-          1,
-          null
-        ]
-      },
-      "/home/victor/App-EngenhariaSI/app/models/subitem.rb": {
-        "lines": [
-          1,
-          null,
           1,
           null,
           1,
@@ -125,7 +114,18 @@
           null
         ]
       },
-      "/home/victor/App-EngenhariaSI/app/channels/application_cable/channel.rb": {
+      "/home/victor/EngSI/app/models/subitem.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/victor/EngSI/app/channels/application_cable/channel.rb": {
         "lines": [
           0,
           0,
@@ -135,7 +135,7 @@
         "branches": {
         }
       },
-      "/home/victor/App-EngenhariaSI/app/channels/application_cable/connection.rb": {
+      "/home/victor/EngSI/app/channels/application_cable/connection.rb": {
         "lines": [
           0,
           0,
@@ -145,7 +145,7 @@
         "branches": {
         }
       },
-      "/home/victor/App-EngenhariaSI/app/controllers/ambientes_controller.rb": {
+      "/home/victor/EngSI/app/controllers/ambientes_controller.rb": {
         "lines": [
           0,
           0,
@@ -214,196 +214,6 @@
           0,
           null,
           null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/victor/App-EngenhariaSI/app/controllers/application_controller.rb": {
-        "lines": [
-          0,
-          null,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/victor/App-EngenhariaSI/app/controllers/home_controller.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/victor/App-EngenhariaSI/app/controllers/lembretes_controller.rb": {
-        "lines": [
-          null,
-          0,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/victor/App-EngenhariaSI/app/controllers/subitems_controller.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
           0,
           0,
           0,
@@ -417,7 +227,197 @@
         "branches": {
         }
       },
-      "/home/victor/App-EngenhariaSI/app/jobs/application_job.rb": {
+      "/home/victor/EngSI/app/controllers/application_controller.rb": {
+        "lines": [
+          0,
+          null,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/victor/EngSI/app/controllers/home_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/victor/EngSI/app/controllers/lembretes_controller.rb": {
+        "lines": [
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/victor/EngSI/app/controllers/subitems_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/victor/EngSI/app/jobs/application_job.rb": {
         "lines": [
           0,
           null,
@@ -431,11 +431,11 @@
         }
       }
     },
-    "timestamp": 1669783375
+    "timestamp": 1670371777
   },
   "Cucumber Features": {
     "coverage": {
-      "/home/victor/App-EngenhariaSI/app/models/user.rb": {
+      "/home/victor/EngSI/app/models/user.rb": {
         "lines": [
           1,
           null,
@@ -455,26 +455,26 @@
           null
         ]
       },
-      "/home/victor/App-EngenhariaSI/app/models/application_record.rb": {
+      "/home/victor/EngSI/app/models/application_record.rb": {
         "lines": [
           1,
           1,
           null
         ]
       },
-      "/home/victor/App-EngenhariaSI/app/helpers/ambientes_helper.rb": {
+      "/home/victor/EngSI/app/helpers/ambientes_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/home/victor/App-EngenhariaSI/app/helpers/application_helper.rb": {
+      "/home/victor/EngSI/app/helpers/application_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/home/victor/App-EngenhariaSI/app/helpers/lembretes_helper.rb": {
+      "/home/victor/EngSI/app/helpers/lembretes_helper.rb": {
         "lines": [
           1,
           1,
@@ -499,13 +499,13 @@
           null
         ]
       },
-      "/home/victor/App-EngenhariaSI/app/helpers/subitems_helper.rb": {
+      "/home/victor/EngSI/app/helpers/subitems_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/home/victor/App-EngenhariaSI/app/controllers/home_controller.rb": {
+      "/home/victor/EngSI/app/controllers/home_controller.rb": {
         "lines": [
           1,
           1,
@@ -514,14 +514,14 @@
           null
         ]
       },
-      "/home/victor/App-EngenhariaSI/app/controllers/application_controller.rb": {
+      "/home/victor/EngSI/app/controllers/application_controller.rb": {
         "lines": [
           1,
           null,
           null
         ]
       },
-      "/home/victor/App-EngenhariaSI/app/controllers/ambientes_controller.rb": {
+      "/home/victor/EngSI/app/controllers/ambientes_controller.rb": {
         "lines": [
           1,
           1,
@@ -601,7 +601,7 @@
           null
         ]
       },
-      "/home/victor/App-EngenhariaSI/app/models/ambiente.rb": {
+      "/home/victor/EngSI/app/models/ambiente.rb": {
         "lines": [
           1,
           null,
@@ -613,7 +613,7 @@
           null
         ]
       },
-      "/home/victor/App-EngenhariaSI/app/models/lembrete.rb": {
+      "/home/victor/EngSI/app/models/lembrete.rb": {
         "lines": [
           1,
           null,
@@ -625,7 +625,7 @@
           null
         ]
       },
-      "/home/victor/App-EngenhariaSI/app/controllers/lembretes_controller.rb": {
+      "/home/victor/EngSI/app/controllers/lembretes_controller.rb": {
         "lines": [
           null,
           1,
@@ -656,6 +656,10 @@
           null,
           7,
           7,
+          null,
+          4,
+          4,
+          null,
           8,
           4,
           null,
@@ -707,7 +711,26 @@
           null
         ]
       },
-      "/home/victor/App-EngenhariaSI/app/models/subitem.rb": {
+      "/home/victor/EngSI/app/mailers/order_mailer.rb": {
+        "lines": [
+          1,
+          1,
+          4,
+          null,
+          4,
+          null,
+          null
+        ]
+      },
+      "/home/victor/EngSI/app/mailers/application_mailer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/victor/EngSI/app/models/subitem.rb": {
         "lines": [
           1,
           null,
@@ -718,7 +741,7 @@
           null
         ]
       },
-      "/home/victor/App-EngenhariaSI/app/controllers/subitems_controller.rb": {
+      "/home/victor/EngSI/app/controllers/subitems_controller.rb": {
         "lines": [
           1,
           1,
@@ -802,7 +825,7 @@
           null
         ]
       },
-      "/home/victor/App-EngenhariaSI/app/channels/application_cable/channel.rb": {
+      "/home/victor/EngSI/app/channels/application_cable/channel.rb": {
         "lines": [
           0,
           0,
@@ -812,7 +835,7 @@
         "branches": {
         }
       },
-      "/home/victor/App-EngenhariaSI/app/channels/application_cable/connection.rb": {
+      "/home/victor/EngSI/app/channels/application_cable/connection.rb": {
         "lines": [
           0,
           0,
@@ -822,7 +845,7 @@
         "branches": {
         }
       },
-      "/home/victor/App-EngenhariaSI/app/jobs/application_job.rb": {
+      "/home/victor/EngSI/app/jobs/application_job.rb": {
         "lines": [
           0,
           null,
@@ -830,35 +853,12 @@
           null,
           null,
           null,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/victor/App-EngenhariaSI/app/mailers/application_mailer.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/victor/App-EngenhariaSI/app/mailers/order_mailer.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
           0
         ],
         "branches": {
         }
       }
     },
-    "timestamp": 1669789824
+    "timestamp": 1670374242
   }
 }

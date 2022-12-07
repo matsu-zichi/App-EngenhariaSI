@@ -73,6 +73,7 @@ Rails.application.configure do
   # config.action_cable.disable_request_forgery_protection = true
 
   # Config email
+  config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
   :address              => "smtp.gmail.com",
