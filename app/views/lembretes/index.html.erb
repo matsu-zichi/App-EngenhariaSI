@@ -3,8 +3,33 @@
 <h1>Lembretes no ambiente <%= @ambiente.nome %> </h1>
 
 <div id="lembretes">
-  <% @lembretes.each do |lembrete| %>
-    <%= render lembrete %>
+    <%= turbo_frame_tag "lembretes"%>
+      <table class="table">
+      <thead>
+        <tr>
+          <th><%= link_to "Titulo", id: "Titulo", :sort => "titulo"%></th>
+          <th>Descricao</th>
+          <th>Data de expiração</th>
+          <th>Tempo restante</th>
+          <th><%= link_to "Prioridade", id: "Prioridade", :sort => "prioridade"%></th>
+        </tr>
+      </thead>
+      <tbody class="table-group-divider">
+
+      <% @lembretes.each do |lembrete| %>
+      <tr>
+        <td><%= lembrete.titulo %></td>
+        <td><%= lembrete.descricao %></td>
+        <% if !lembrete.expire_at.nil? %>
+
+          <td><%= lembrete.expire_at.strftime("%d/%m/%Y, %H:%M:%S") %></td>
+          <td><%= calcula_countdown(lembrete.expire_at - DateTime.now) %></td>
+        <% end %>
+        <td><%= lembrete.prioridade %></td>
+        <td><%= link_to 'Editar lembrete', edit_user_ambiente_lembrete_path(current_user, @ambiente, lembrete) %></td>
+        <td><%= button_to "Deletar lembrete", user_ambiente_lembrete_path(current_user, @ambiente, lembrete), method: :delete %></td>
+      </tr>
+    </div>
   <% end %>
 </div>
 

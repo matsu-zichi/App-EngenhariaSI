@@ -95,4 +95,3 @@ gem "mailslurp_client", "~> 15.14"
 gem "rspec", "~> 3.11"
 
 gem "typhoeus", "~> 1.4"
-

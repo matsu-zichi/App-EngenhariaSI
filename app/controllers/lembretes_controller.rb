@@ -1,11 +1,26 @@
-
 class LembretesController < ApplicationController
   before_action :get_ambiente
   before_action :set_lembrete, only: %i[ show edit update destroy ]
 
   # GET /lembretes or /lembretes.json
   def index
-    @lembretes = @ambiente.lembretes
+    # @lembretes = @ambiente.lembretes
+
+    # @lembretes = @ambiente.lembretes.order(expire_at: :asc)
+
+    # if params[:sort].present?
+    #   sort_fields = ['titulo', 'expire_at']
+    #   @lembretes = @ambiente.lembretes.order(params[:sort]) if sort_fields.include?(params[:sort])
+    # end
+    # @lembretes ||= @ambiente.lembretes
+
+    if params[:sort] == "prioridade"
+       @lembretes = @ambiente.lembretes.order(prioridade: :asc)
+    end
+    if params[:sort] == "titulo"
+       @lembretes = @ambiente.lembretes.order(titulo: :asc)
+    end
+    @lembretes ||= @ambiente.lembretes    
   end
 
   # GET /lembretes/1 or /lembretes/1.json
@@ -71,7 +86,7 @@ class LembretesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def lembrete_params
-      params.require(:lembrete).permit(:titulo, :texto, :expire_at, :email, :ambiente_id, :user_id)
+      params.require(:lembrete).permit(:titulo, :texto, :expire_at, :prioridade, :email, :ambiente_id, :user_id)
     end
 
   private

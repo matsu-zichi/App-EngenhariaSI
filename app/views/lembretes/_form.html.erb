@@ -25,11 +25,16 @@
     <%= form.label :data_de_vencimento, style: "display: block" %>
     <%= form.datetime_field :expire_at, min: Time.now, step: 1 %>
   </div>
+
+  <div>
+    <%= form.label :prioridade, style: "display: block" %>
+    <%= form.select :prioridade, [["Prioridade 1", "P1"], ["Prioridade 2", "P2"], ["Prioridade 3", "P3"], ["Prioridade 4", "P4"]], selected: "P1" %>
+  </div>
+
   <div>
     <%= form.label :email, style: "display: block" %>
     <%= form.text_field :email, value:current_user.email %>
   </div>
-  
   <br>
   <div>
     <%= form.submit %>
