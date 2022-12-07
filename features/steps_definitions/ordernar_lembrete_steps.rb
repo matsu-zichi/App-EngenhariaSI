@@ -13,7 +13,7 @@ Dado('que eu estou na página do ambiente {string}') do |string|
 end
 
 Dado('criei o lembrete {string} com descricao {string} e prioridade {string}') do |string, string2, string3|
-  @lembrete = FactoryBot.create(:lembrete, :titulo => string, :descricao => string2, :prioridade => string3, ambiente: @ambiente)
+  @lembrete = FactoryBot.create(:lembrete, :titulo => string, :texto => string2, :prioridade => string3, ambiente: @ambiente)
 end
 
 Então('devo ver o lembrete {string} antes do lembrete {string}') do |string, string2|

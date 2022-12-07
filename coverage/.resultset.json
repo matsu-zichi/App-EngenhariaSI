@@ -249,7 +249,6 @@
       },
       "/home/victor/EngSI/app/controllers/lembretes_controller.rb": {
         "lines": [
-          null,
           0,
           0,
           0,
@@ -292,6 +291,10 @@
           0,
           0,
           null,
+          0,
+          0,
+          null,
+          0,
           0,
           0,
           0,
@@ -447,7 +450,7 @@
         }
       }
     },
-    "timestamp": 1670371777
+    "timestamp": 1670378346
   },
   "Cucumber Features": {
     "coverage": {
@@ -545,7 +548,7 @@
           null,
           null,
           1,
-          30,
+          32,
           null,
           null,
           null,
@@ -602,7 +605,7 @@
           1,
           null,
           1,
-          26,
+          28,
           null,
           null,
           null,
@@ -612,7 +615,7 @@
           null,
           1,
           1,
-          60,
+          64,
           null,
           null
         ]
@@ -643,14 +646,29 @@
       },
       "/home/victor/EngSI/app/controllers/lembretes_controller.rb": {
         "lines": [
-          null,
           1,
           1,
           1,
           null,
           null,
           1,
-          21,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          25,
+          1,
+          null,
+          25,
+          1,
+          null,
+          25,
           null,
           null,
           null,
@@ -721,7 +739,7 @@
           null,
           1,
           1,
-          39,
+          43,
           null,
           null,
           null
@@ -875,6 +893,6 @@
         }
       }
     },
-    "timestamp": 1670374242
+    "timestamp": 1670378054
   }
 }
