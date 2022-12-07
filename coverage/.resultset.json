@@ -454,7 +454,7 @@
   },
   "Cucumber Features": {
     "coverage": {
-      "/home/victor/EngSI/app/models/user.rb": {
+      "/home/victor/App-EngenhariaSI/app/models/user.rb": {
         "lines": [
           1,
           null,
@@ -474,26 +474,26 @@
           null
         ]
       },
-      "/home/victor/EngSI/app/models/application_record.rb": {
+      "/home/victor/App-EngenhariaSI/app/models/application_record.rb": {
         "lines": [
           1,
           1,
           null
         ]
       },
-      "/home/victor/EngSI/app/helpers/ambientes_helper.rb": {
+      "/home/victor/App-EngenhariaSI/app/helpers/ambientes_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/home/victor/EngSI/app/helpers/application_helper.rb": {
+      "/home/victor/App-EngenhariaSI/app/helpers/application_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/home/victor/EngSI/app/helpers/lembretes_helper.rb": {
+      "/home/victor/App-EngenhariaSI/app/helpers/lembretes_helper.rb": {
         "lines": [
           1,
           1,
@@ -518,13 +518,13 @@
           null
         ]
       },
-      "/home/victor/EngSI/app/helpers/subitems_helper.rb": {
+      "/home/victor/App-EngenhariaSI/app/helpers/subitems_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/home/victor/EngSI/app/controllers/home_controller.rb": {
+      "/home/victor/App-EngenhariaSI/app/controllers/home_controller.rb": {
         "lines": [
           1,
           1,
@@ -533,94 +533,14 @@
           null
         ]
       },
-      "/home/victor/EngSI/app/controllers/application_controller.rb": {
+      "/home/victor/App-EngenhariaSI/app/controllers/application_controller.rb": {
         "lines": [
           1,
           null,
           null
         ]
       },
-      "/home/victor/EngSI/app/controllers/ambientes_controller.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          32,
-          null,
-          null,
-          null,
-          1,
-          null,
-          null,
-          null,
-          1,
-          2,
-          null,
-          null,
-          null,
-          1,
-          null,
-          null,
-          null,
-          1,
-          2,
-          null,
-          2,
-          2,
-          2,
-          1,
-          null,
-          2,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          2,
-          2,
-          2,
-          1,
-          null,
-          2,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          2,
-          1,
-          null,
-          null,
-          null,
-          1,
-          null,
-          1,
-          28,
-          null,
-          null,
-          null,
-          1,
-          4,
-          null,
-          null,
-          1,
-          1,
-          64,
-          null,
-          null
-        ]
-      },
-      "/home/victor/EngSI/app/models/ambiente.rb": {
+      "/home/victor/App-EngenhariaSI/app/models/ambiente.rb": {
         "lines": [
           1,
           null,
@@ -632,19 +552,7 @@
           null
         ]
       },
-      "/home/victor/EngSI/app/models/lembrete.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null
-        ]
-      },
-      "/home/victor/EngSI/app/controllers/lembretes_controller.rb": {
+      "/home/victor/App-EngenhariaSI/app/controllers/ambientes_controller.rb": {
         "lines": [
           1,
           1,
@@ -652,23 +560,7 @@
           null,
           null,
           1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          25,
           1,
-          null,
-          25,
-          1,
-          null,
-          25,
           null,
           null,
           null,
@@ -677,7 +569,7 @@
           null,
           null,
           1,
-          7,
+          0,
           null,
           null,
           null,
@@ -686,29 +578,12 @@
           null,
           null,
           1,
-          7,
+          0,
           null,
-          7,
-          7,
-          null,
-          4,
-          4,
-          null,
-          8,
-          4,
-          null,
-          6,
-          3,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          2,
-          1,
+          0,
+          0,
+          0,
+          0,
           null,
           0,
           0,
@@ -718,76 +593,32 @@
           null,
           null,
           1,
-          1,
+          0,
+          0,
+          0,
+          0,
           null,
-          1,
-          2,
-          1,
+          0,
+          0,
           null,
           null,
-          null,
-          1,
-          null,
-          1,
-          4,
           null,
           null,
           null,
           1,
-          8,
+          0,
+          null,
+          0,
+          0,
+          0,
           null,
           null,
-          1,
-          1,
-          43,
-          null,
-          null,
-          null
-        ]
-      },
-      "/home/victor/EngSI/app/mailers/order_mailer.rb": {
-        "lines": [
-          1,
-          1,
-          4,
-          null,
-          4,
-          null,
-          null
-        ]
-      },
-      "/home/victor/EngSI/app/mailers/application_mailer.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null
-        ]
-      },
-      "/home/victor/EngSI/app/models/subitem.rb": {
-        "lines": [
-          1,
           null,
           1,
           null,
           1,
           1,
-          null
-        ]
-      },
-      "/home/victor/EngSI/app/controllers/subitems_controller.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
           null,
-          1,
-          12,
-          null,
-          null,
-          1,
-          4,
           null,
           null,
           1,
@@ -795,71 +626,128 @@
           null,
           null,
           1,
-          null,
-          null,
-          null,
-          1,
-          4,
-          null,
-          4,
-          4,
-          2,
-          1,
-          null,
-          6,
-          3,
-          null,
-          null,
-          null,
-          null,
-          1,
-          4,
-          4,
-          2,
-          1,
-          null,
-          6,
-          3,
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          null,
           1,
           2,
-          1,
-          null,
-          null,
-          null,
-          1,
-          null,
-          null,
-          null,
-          1,
-          1,
-          8,
-          null,
-          null,
-          1,
-          1,
-          30,
-          null,
-          null,
-          1,
-          1,
-          30,
-          null,
-          null,
-          1,
-          1,
-          10,
           null,
           null
         ]
       },
-      "/home/victor/EngSI/app/channels/application_cable/channel.rb": {
+      "/home/victor/App-EngenhariaSI/app/controllers/lembretes_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          1,
+          0,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          1,
+          2,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/victor/App-EngenhariaSI/app/models/lembrete.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/victor/App-EngenhariaSI/app/channels/application_cable/channel.rb": {
         "lines": [
           0,
           0,
@@ -869,7 +757,7 @@
         "branches": {
         }
       },
-      "/home/victor/EngSI/app/channels/application_cable/connection.rb": {
+      "/home/victor/App-EngenhariaSI/app/channels/application_cable/connection.rb": {
         "lines": [
           0,
           0,
@@ -879,7 +767,92 @@
         "branches": {
         }
       },
-      "/home/victor/EngSI/app/jobs/application_job.rb": {
+      "/home/victor/App-EngenhariaSI/app/controllers/subitems_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/victor/App-EngenhariaSI/app/jobs/application_job.rb": {
         "lines": [
           0,
           null,
@@ -887,12 +860,54 @@
           null,
           null,
           null,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/victor/App-EngenhariaSI/app/mailers/application_mailer.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/victor/App-EngenhariaSI/app/mailers/order_mailer.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/victor/App-EngenhariaSI/app/models/subitem.rb": {
+        "lines": [
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
           0
         ],
         "branches": {
         }
       }
     },
-    "timestamp": 1670378054
+    "timestamp": 1670397399
   }
 }

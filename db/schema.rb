@@ -26,7 +26,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_05_204422) do
     t.integer "ambiente_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.datetime "expire_at", precision: nil
+    t.datetime "expire_at"
     t.string "email"
     t.string "prioridade"
     t.index ["ambiente_id"], name: "index_lembretes_on_ambiente_id"
