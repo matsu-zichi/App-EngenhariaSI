@@ -8,9 +8,4 @@
     <strong>Texto:</strong>
     <%= subitem.texto %>
   </p>
-  
-  <p>
-    <%= link_to 'Editar Subitem', edit_user_ambiente_lembrete_subitem_path(current_user, @ambiente, @lembrete, subitem) %>
-    <%= button_to "Deletar Subitem", user_ambiente_lembrete_subitem_path(current_user, @ambiente, @lembrete, subitem), method: :delete %>
-  </p>
 </div>

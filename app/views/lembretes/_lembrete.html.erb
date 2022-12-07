@@ -1,7 +1,6 @@
 <div id="<%= dom_id lembrete %>">
   <p>
-    <strong>Titulo:</strong>
-    <%= lembrete.titulo %>
+    <h1>Lembrete '<%= lembrete.titulo %>' </h1>
   </p>
 
   <p>
@@ -31,9 +30,5 @@
   <p>
     <strong>Email de notificação:</strong>
     <%= lembrete.email %>
-  </p>
-
-  <p>
-    <%= link_to 'Mostrar Sub-itens', user_ambiente_lembrete_subitems_path(current_user, @ambiente, lembrete) %>
   </p>
 </div>

@@ -23,10 +23,9 @@ Quando('for na página de cadastro de subitens do lembrete') do
   fill_in "Password",	with: "123456"
   click_on 'Log in'  
   click_on 'Ambientes'
-  click_on 'Show Ambiente'
   click_on 'Mostrar lembretes'
   click_on 'Mostrar Sub-itens'
-  click_on 'Adicionar Sub-itens'
+  click_on 'Adicionar subitem'
 end
 
 Quando('for na página de edicao do subitem') do
@@ -36,10 +35,9 @@ Quando('for na página de edicao do subitem') do
   fill_in "Password",	with: "123456"
   click_on 'Log in'
   click_on 'Ambientes'
-  click_on 'Show Ambiente'
   click_on 'Mostrar lembretes'
   click_on 'Mostrar Sub-itens'
-  click_on 'Editar Subitem'
+  click_on 'Editar subitem'
 end
 
 Quando('preencho o campo {string} com {string}') do |string, string2|

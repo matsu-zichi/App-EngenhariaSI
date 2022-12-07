@@ -7,7 +7,7 @@
       <thead>
         <tr>
           <th><%= link_to "Nome", :sort => "nome" %></th>
-          <th>Descricao</th>
+          <th>Descrição</th>
           <th> <%= link_to "Data de Criação",  id: "Data de Criação", :sort => "created_at"%></th>
         </tr>
       </thead>
@@ -18,8 +18,9 @@
             <td><%= ambiente.nome %></td>
             <td><%= ambiente.descricao %></td>
             <td><%= ambiente.created_at %></td>
-            <td><%= link_to "Show Ambiente", user_ambiente_path(@user, ambiente), class: "btn btn-info"%></td>
+            <td><%= link_to 'Mostrar lembretes', user_ambiente_lembretes_path(@user, ambiente), class: "btn btn-info" %></td>
             <td><%= link_to "Edit Ambiente", edit_user_ambiente_path(@user, ambiente), class:"btn btn-warning" %></td>
+            <td><%= button_to "Deletar Ambiente", user_ambiente_path(@user, ambiente), class:"btn btn-danger", method: :delete %></td>
         </tr>
       <% end %>
       </tbody>

@@ -13,7 +13,7 @@ Cenário:
     E cliclar em "Adicionar lembrete"
     E preencher "Titulo" com "Lembrete"
     E preencher "Texto" com "Não se esquecer de fazer as tarefas"
-    E cliclar em "Create Lembrete"
+    E cliclar em "Criar"
     Entao deveria ver "Lembrete was successfully created."
 
 Cenário:
@@ -21,7 +21,7 @@ Cenário:
     E cliclar em "Adicionar lembrete"
     E preencher "Titulo" com "Outro Lembrete"
     E preencher "Texto" com "Não se esquecer"
-    E cliclar em "Create Lembrete"
+    E cliclar em "Criar"
     E clicar em "Deletar lembrete"
     Então deveria ver "Lembrete was successfully destroyed."
 
@@ -30,11 +30,11 @@ Cenário:
     E cliclar em "Adicionar lembrete"
     E preencher "Titulo" com "Lembrete"
     E preencher "Texto" com "Não se esquecer de fazer as tarefas"
-    E cliclar em "Create Lembrete"
+    E cliclar em "Criar"
     E clicar em "Editar lembrete"
     E preencher "Titulo" com "EDITADO"
     E preencher "Texto" com "EDITADO"
-    E clicar em "Update Lembrete"
+    E clicar em "Criar"
     Então deveria ver "Lembrete was successfully updated."
 
 Cenário:
@@ -42,7 +42,7 @@ Cenário:
     E clicar em "Adicionar lembrete"
     E preencher "Titulo" com ""
     E preencher "Texto" com "Texto"
-    E clicar em "Create Lembrete"
+    E clicar em "Criar"
     Então deveria ver "Titulo can't be blank"
 
 Cenário:
@@ -50,7 +50,7 @@ Cenário:
     E clicar em "Adicionar lembrete"
     E preencher "Titulo" com "Titulo"
     E preencher "Texto" com ""
-    E clicar em "Create Lembrete"
+    E clicar em "Criar"
     Então deveria ver "Texto can't be blank"
 
 Cenário:
@@ -58,7 +58,7 @@ Cenário:
     E clicar em "Adicionar lembrete"
     E preencher "Titulo" com ""
     E preencher "Texto" com ""
-    E clicar em "Create Lembrete"
+    E clicar em "Criar"
     Então deveria ver "2 errors prohibited this lembrete from being saved:"
 
 Cenário:
@@ -66,18 +66,17 @@ Cenário:
     E cliclar em "Adicionar lembrete"
     E preencher "Titulo" com "Lembrete Email"
     E preencher "Texto" com "Não se esquecer de fazer as tarefas"
-    E preencher email
-    E cliclar em "Create Lembrete"
-    Entao deveria receber o email de confirmacao
+    E preencher "Email" com "teste@teste.br"
+    Entao um email deveria ser enviado ao criar o lembrete
 
 Cenário:
     Quando for na página de lembretes do ambiente
     E cliclar em "Adicionar lembrete"
     E preencher "Titulo" com "Lembrete"
     E preencher "Texto" com "Não se esquecer de fazer as tarefas"
-    E cliclar em "Create Lembrete"
+    E cliclar em "Criar"
     E clicar em "Editar lembrete"
     E preencher "Titulo" com ""
     E preencher "Texto" com ""
-    E clicar em "Update Lembrete"
+    E clicar em "Criar"
     Então deveria ver "2 errors prohibited this lembrete from being saved:"
