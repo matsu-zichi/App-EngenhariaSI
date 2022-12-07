@@ -2,9 +2,7 @@
 
 <%= render "form", subitem: @subitem %>
 
-<br>
-
 <div>
-  <%= button_to "Deletar Subitem", user_ambiente_lembrete_subitem_path(current_user, @ambiente, @lembrete, @subitem), method: :delete %>
-  <%= link_to "Voltar", user_ambiente_lembrete_subitems_path(current_user, @ambiente, @lembrete) %>
+  <%= link_to "Deletar Subitem", user_ambiente_lembrete_subitem_path(current_user, @ambiente, @lembrete, @subitem), class:"btn btn-danger", method: :delete %>
+  <%= link_to "Voltar", user_ambiente_lembrete_subitems_path(current_user, @ambiente, @lembrete), class:"btn btn-info" %>
 </div>

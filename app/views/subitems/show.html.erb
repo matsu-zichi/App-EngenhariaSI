@@ -1,14 +1,7 @@
-<p>
-  <strong>Titulo:</strong>
-  <%= @subitem.titulo %>
-</p>
- 
-<p>
-  <strong>Texto:</strong>
-  <%= @subitem.texto %>
-</p>
+<%= render @subitem %>
 
 <p>
-  <%= link_to 'Editar Sub-item', edit_user_ambiente_lembrete_subitem_path(current_user, @ambiente, @lembrete, @subitem) %>
-  <%= button_to "Deletar Sub-item", user_ambiente_lembrete_subitem_path(current_user, @ambiente, @lembrete, @subitem), method: :delete %>
+  <%= link_to 'Editar subitem', edit_user_ambiente_lembrete_subitem_path(current_user, @ambiente, @lembrete, @subitem), class:"btn btn-outline-warning" %>
+  <%= link_to "Deletar subitem", user_ambiente_lembrete_subitem_path(current_user, @ambiente, @lembrete, @subitem), class:"btn btn-outline-danger", method: :delete %>
+  <%= link_to 'Voltar', user_ambiente_lembrete_subitems_path(current_user, @ambiente, @lembrete), class:"btn btn-outline-secondary" %>
 </p>

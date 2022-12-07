@@ -1,2 +1,11 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<h1>Bem-vindo ao Não se Esqueça!</h1>
+<p><div class="row">
+<div class="col-sm-6">
+   <div class="card">
+      <div class="card-body">
+         <h5 class="card-title">Meus Ambientes</h5>
+         <p class="card-text">Gerencie aqui seus ambientes</p>
+         <%= link_to "Meus ambientes", user_ambientes_path(current_user), class:"btn btn-primary" %>
+      </div>
+   </div>
+</div></p>

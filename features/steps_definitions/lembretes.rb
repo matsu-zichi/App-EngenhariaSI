@@ -39,7 +39,6 @@ Quando('for na página de lembretes do ambiente') do
     fill_in "Password",	with: "123456"
     click_on 'Log in'  
     click_on 'Ambientes'
-    click_on 'Show Ambiente'
     click_on 'Mostrar lembretes'
 end
 

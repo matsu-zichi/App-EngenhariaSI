@@ -3,11 +3,28 @@
 <h1>Sub-itens no lembrete <%= @lembrete.titulo %> </h1>
 
 <div id="subitems">
-  <% @subitems.each do |subitems| %>
-    <%= render subitems %>
-  <% end %>
+    <%= turbo_frame_tag "subitems"%>
+      <table class="table">
+        <thead>
+          <tr>
+            <th><%= link_to "Titulo", id: "Titulo", :sort => "titulo"%></th>
+            <th>Texto</th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+
+          <% @subitems.each do |subitem| %>
+            <tr>
+              <td><%= subitem.titulo %></td>
+              <td><%= subitem.texto %></td>
+              <td><%= link_to "Detalhes", user_ambiente_lembrete_subitem_path(current_user, @ambiente, @lembrete, subitem), class:"btn btn-primary" %></td>
+              <td><%= link_to 'Editar subitem', edit_user_ambiente_lembrete_subitem_path(current_user, @ambiente, @lembrete, subitem), class:"btn btn-warning" %></td>
+              <td><%= button_to "Deletar subitem", user_ambiente_lembrete_subitem_path(current_user, @ambiente, @lembrete, subitem), class:"btn btn-danger", method: :delete %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
 </div>
 
-<%= link_to "Adicionar Sub-itens", new_user_ambiente_lembrete_subitem_path %> |
-<%= link_to 'Voltar para lembrete', user_ambiente_lembretes_path(current_user, @ambiente) %>
-
+<%= link_to "Adicionar subitem", new_user_ambiente_lembrete_subitem_path, class: "btn btn-secondary" %>
+<%= link_to 'Voltar para lembretes', user_ambiente_lembretes_path(current_user, @ambiente), class: "btn btn-outline-info" %>
