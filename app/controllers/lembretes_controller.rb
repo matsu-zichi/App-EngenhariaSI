@@ -45,6 +45,7 @@ class LembretesController < ApplicationController
         #Send email
         if !(@lembrete.email.empty? || @lembrete.email.nil?)
           OrderMailer.with(lembrete: @lembrete).new_order_email.deliver_now
+          OrderMailer.with(lembrete: @lembrete).expired_lembrete.deliver_later(wait_until: @lembrete.expire_at)
         end
         format.html { redirect_to user_ambiente_lembretes_path(current_user, @ambiente), notice: "Lembrete was successfully created." }
         format.json { render :show, status: :created, location: @lembrete }
@@ -61,6 +62,7 @@ class LembretesController < ApplicationController
       if @lembrete.update(lembrete_params)
         format.html { redirect_to user_ambiente_lembrete_path(current_user, @ambiente), notice: "Lembrete was successfully updated." }
         format.json { render :show, status: :ok, location: @lembrete }
+        OrderMailer.with(lembrete: @lembrete).expired_lembrete.deliver_later(wait_until: @lembrete.expire_at)
       else
         format.html { render :edit, status: :unprocessable_entity }
         format.json { render json: @lembrete.errors, status: :unprocessable_entity }

@@ -12,7 +12,6 @@ class SubitemsController < ApplicationController
     end
 
     def show
-        @subitem = Subitem.find(params[:id])
     end
 
     def edit
