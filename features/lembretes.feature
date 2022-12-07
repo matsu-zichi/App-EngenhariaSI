@@ -66,9 +66,8 @@ Cenário:
     E cliclar em "Adicionar lembrete"
     E preencher "Titulo" com "Lembrete Email"
     E preencher "Texto" com "Não se esquecer de fazer as tarefas"
-    E preencher email
-    E cliclar em "Criar"
-    Entao deveria receber o email de confirmacao
+    E preencher "Email" com "teste@teste.br"
+    Entao um email deveria ser enviado ao criar o lembrete
 
 Cenário:
     Quando for na página de lembretes do ambiente
