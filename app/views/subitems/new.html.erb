@@ -1,0 +1,9 @@
+<h1>New Subitem</h1>
+
+<%= render "form", subitem: @subitem %>
+
+<br>
+
+<div>
+  <%= link_to "Voltar", user_ambiente_lembrete_subitems_path(current_user, @ambiente, @lembrete) %>
+</div>

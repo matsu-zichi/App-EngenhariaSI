@@ -22,13 +22,23 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_05_204422) do
 
   create_table "lembretes", force: :cascade do |t|
     t.string "titulo"
-    t.string "descricao"
+    t.string "texto"
     t.integer "ambiente_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.datetime "expire_at", precision: nil
+    t.string "email"
     t.string "prioridade"
     t.index ["ambiente_id"], name: "index_lembretes_on_ambiente_id"
+  end
+
+  create_table "subitems", force: :cascade do |t|
+    t.string "titulo"
+    t.string "texto"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "lembrete_id", null: false
+    t.index ["lembrete_id"], name: "index_subitems_on_lembrete_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -55,4 +65,5 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_05_204422) do
 
   add_foreign_key "ambientes", "users"
   add_foreign_key "lembretes", "ambientes"
+  add_foreign_key "subitems", "lembretes"
 end

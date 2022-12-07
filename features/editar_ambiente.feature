@@ -9,7 +9,7 @@ Cenário: editar ambiente com sucesso
    Dado que eu estou na página de edição do ambiente "Faculdade"
    Quando eu preencho o campo "descricao" com "Lembretes da Facul"
    E clico em "Criar"
-   Então deverei ver a mensagem "ambiente was successfully updated."
+   Então deverei ver a mensagem "Ambiente atualizado com sucesso."
    E deverei ver o meu ambiente a informacao "Lembretes da Facul" na tela
 
 Cenário: editar ambiente com erro - sem nome do ambiente

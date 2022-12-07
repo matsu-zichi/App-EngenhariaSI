@@ -84,6 +84,14 @@ group :test do
 
   gem "selenium-webdriver"
   gem "webdrivers"
+  gem 'launchy'
 end
 
 gem "devise", "~> 4.8"
+
+
+gem "mailslurp_client", "~> 15.14"
+
+gem "rspec", "~> 3.11"
+
+gem "typhoeus", "~> 1.4"

@@ -5,7 +5,7 @@ RSpec.describe LembretesHelper, type: :helper do
     it 'countdown' do
         lembrete = Lembrete.new
         lembrete.titulo = "Consulta medica"
-        lembrete.descricao = "Cardiologista"
+        lembrete.texto = "Cardiologista"
         lembrete.expire_at = Time.now + 90061
 
         resp = calcula_countdown(lembrete.expire_at - Time.now)
@@ -15,7 +15,7 @@ RSpec.describe LembretesHelper, type: :helper do
     it 'countdown expirado' do
         lembrete = Lembrete.new
         lembrete.titulo = "Consulta medica"
-        lembrete.descricao = "Cardiologista"
+        lembrete.texto = "Cardiologista"
         lembrete.expire_at = Time.now
 
         resp = calcula_countdown(lembrete.expire_at - Time.now)

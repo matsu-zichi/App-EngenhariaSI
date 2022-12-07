@@ -5,8 +5,8 @@
   </p>
 
   <p>
-    <strong>Descrição:</strong>
-    <%= lembrete.descricao %>
+    <strong>Texto:</strong>
+    <%= lembrete.texto %>
   </p>
 
   <% if !lembrete.expire_at.nil? %>
@@ -29,7 +29,11 @@
   <% end %>
 
   <p>
-    <%= link_to 'Editar lembrete', edit_user_ambiente_lembrete_path(current_user, @ambiente, lembrete) %>
-    <%= button_to "Deletar lembrete", user_ambiente_lembrete_path(current_user, @ambiente, lembrete), method: :delete %>
+    <strong>Email de notificação:</strong>
+    <%= lembrete.email %>
+  </p>
+
+  <p>
+    <%= link_to 'Mostrar Sub-itens', user_ambiente_lembrete_subitems_path(current_user, @ambiente, lembrete) %>
   </p>
 </div>

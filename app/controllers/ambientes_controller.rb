@@ -26,7 +26,7 @@ class AmbientesController < ApplicationController
 
     respond_to do |format|
       if @ambiente.save
-        format.html { redirect_to user_ambientes_path(@user), notice: "ambiente was successfully created." }
+        format.html { redirect_to user_ambientes_path(@user), notice: "Ambiente criado com sucesso." }
         format.json { render :show, status: :created, location: @ambiente }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -39,7 +39,7 @@ class AmbientesController < ApplicationController
   def update
     respond_to do |format|
       if @ambiente.update(ambiente_params)
-        format.html { redirect_to user_ambiente_path(@user), notice: "ambiente was successfully updated." }
+        format.html { redirect_to user_ambiente_path(@user), notice: "Ambiente atualizado com sucesso." }
         format.json { render :show, status: :ok, location: @ambiente }
       else
         format.html { render :edit, status: :unprocessable_entity }
