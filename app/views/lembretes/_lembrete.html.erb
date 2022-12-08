@@ -31,4 +31,27 @@
     <strong>Email de notificação:</strong>
     <%= lembrete.email %>
   </p>
+
+  <p>
+    <strong>Endereço:</strong>
+    <%= lembrete.endereco %>
+    <input id="lembrete_endereco" type="text" value=<%= lembrete.endereco %> style="display:none">
+  </p>
+
+  <input id="txtLat" type="text" value=<%= lembrete.latalt.split(';')[0] %> style="display:none">
+  <input id="txtAlt" type="text" value=<%= lembrete.latalt.split(';')[1] %> style="display:none">
+
+
+  <div id="map" style="height:25%; width:25%;"></div>
+  
+  <input type="button" value = "Mostrar Mapa" style="position: absolute;background-color:#FFFFFF" onClick="document.getElementById('map').style.position = 'static'" />
+  <br/>
+  <input type="button" value = "Esconder Mapa" style="position: absolute;background-color:#FFFFFF" onClick="document.getElementById('map').style.position = 'relative'" />
+  <br/>
+  <br/>
+  
+
+  <p>
+    <%= link_to 'Mostrar Sub-itens', user_ambiente_lembrete_subitems_path(current_user, @ambiente, lembrete) %>
+  </p>
 </div>

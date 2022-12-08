@@ -35,8 +35,33 @@
     <%= form.label :email, style: "display: block" %>
     <%= form.text_field :email, value:current_user.email %>
   </div>
-  <br>
+  
+  <div>
+    <table>
+      <tr>
+        <%= form.label :endereco, style: "display: block" %>
+      </tr>
+      <tr>
+        <td> <%= form.text_field :endereco %> </td>
+        <td> <%= form.text_field :latalt, style: "display: none" %> </td>
+      </tr>
+
+    </table>
+  </div>
+
+  <div id="map" style="height:25%; width:25%;"></div>
+
+  <input type="button" value = "aaaaaaaa" onClick="document.getElementById('lembrete_endereco').place_changed()" />
+  <input type="button" value = "Mostrar Mapa" style="position: absolute;background-color:#FFFFFF" onClick="document.getElementById('map').style.position = 'static'" />
+  <br/>
+  <input type="button" value = "Esconder Mapa" style="position: absolute;background-color:#FFFFFF" onClick="document.getElementById('map').style.position = 'relative'" />
+  <br/>
+  <br/>
+
+
   <div>
     <%= form.submit "Criar", class:"btn btn-secondary" %>
   </div>
 <% end %>
+
+
