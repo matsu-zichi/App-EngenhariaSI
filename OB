@@ -1,0 +1,1205 @@
+[1mdiff --cc app/views/lembretes/_lembrete.html.erb[m
+[1mindex 874909a7,b57fd5b6..00000000[m
+mode 100644,100644..100755[m
+[1m--- a/app/views/lembretes/_lembrete.html.erb[m
+[1m+++ b/app/views/lembretes/_lembrete.html.erb[m
+[36m@@@ -32,27 -31,4 +31,30 @@@[m
+      <strong>Email de notificação:</strong>[m
+      <%= lembrete.email %>[m
+    </p>[m
+[32m++<<<<<<< HEAD[m
+[32m +[m
+[32m +  <p>[m
+[32m +    <strong>Endereço:</strong>[m
+[32m +    <%= lembrete.endereco %>[m
+[32m +    <input id="lembrete_endereco" type="text" value=<%= lembrete.endereco %> style="display:none">[m
+[32m +  </p>[m
+[32m +[m
+[32m +  <input id="txtLat" type="text" value=<%= lembrete.latalt.split(';')[0] %> style="display:none">[m
+[32m +  <input id="txtAlt" type="text" value=<%= lembrete.latalt.split(';')[1] %> style="display:none">[m
+[32m +[m
+[32m +[m
+[32m +  <div id="map" style="height:25%; width:25%;"></div>[m
+[32m +  [m
+[32m +  <input type="button" value = "Mostrar Mapa" style="position: absolute;background-color:#FFFFFF" onClick="document.getElementById('map').style.position = 'static'" />[m
+[32m +  <br/>[m
+[32m +  <input type="button" value = "Esconder Mapa" style="position: absolute;background-color:#FFFFFF" onClick="document.getElementById('map').style.position = 'relative'" />[m
+[32m +  <br/>[m
+[32m +  <br/>[m
+[32m +  [m
+[32m +[m
+[32m +  <p>[m
+[32m +    <%= link_to 'Mostrar Sub-itens', user_ambiente_lembrete_subitems_path(current_user, @ambiente, lembrete) %>[m
+[32m +  </p>[m
+[32m++=======[m
+[32m++>>>>>>> refs/remotes/origin/main[m
+  </div>[m
+[1mdiff --cc coverage/.resultset.json[m
+[1mindex 367dc384,f21db2b2..00000000[m
+mode 100644,100644..100755[m
+[1m--- a/coverage/.resultset.json[m
+[1m+++ b/coverage/.resultset.json[m
+[36m@@@ -1,460 -1,7 +1,464 @@@[m
+  {[m
+    "RSpec": {[m
+      "coverage": {[m
+[32m++<<<<<<< HEAD[m
+[32m +      "/home/victor/EngSI/app/models/user.rb": {[m
+[32m +        "lines": [[m
+[32m +          1,[m
+[32m +          null,[m
+[32m +          1,[m
+[32m +          null,[m
+[32m +          1,[m
+[32m +          null,[m
+[32m +          null,[m
+[32m +          null,[m
+[32m +          1,[m
+[32m +          null,[m
+[32m +          null,[m
+[32m +          null,[m
+[32m +          null,[m
+[32m +          null,[m
+[32m +          null,[m
+[32m +          null[m
+[32m +        ][m
+[32m +      },[m
+[32m +      "/home/victor/EngSI/app/models/application_record.rb": {[m
+[32m +        "lines": [[m
+[32m +          1,[m
+[32m +          1,[m
+[32m +          null[m
+[32m +        ][m
+[32m +      },[m
+[32m +      "/home/victor/EngSI/app/helpers/ambientes_helper.rb": {[m
+[32m +        "lines": [[m
+[32m +          1,[m
+[32m +          null[m
+[32m +        ][m
+[32m +      },[m
+[32m +      "/home/victor/EngSI/app/helpers/application_helper.rb": {[m
+[32m +        "lines": [[m
+[32m +          1,[m
+[32m +          null[m
+[32m +        ][m
+[32m +      },[m
+[32m +      "/home/victor/EngSI/app/helpers/lembretes_helper.rb": {[m
+[32m +        "lines": [[m
+[32m +          1,[m
+[32m +          1,[m
+[32m +          2,[m
+[32m +          null,[m
+[32m +          2,[m
+[32m +          1,[m
+[32m +          null,[m
+[32m +          2,[m
+[32m +          1,[m
+[32m +          null,[m
+[32m +          2,[m
+[32m +          1,[m
+[32m +          null,[m
+[32m +          2,[m
+[32m +          1,[m
+[32m +          null,[m
+[32m +          null,[m
+[32m +          1,[m
+[32m +          1,[m
+[32m +          null,[m
+[32m +          null[m
+[32m +        ][m
+[32m +      },[m
+[32m +      "/home/victor/EngSI/app/helpers/subitems_helper.rb": {[m
+[32m +        "lines": [[m
+[32m +          1,[m
+[32m +          null[m
+[32m +        ][m
+[32m +      },[m
+[32m +      "/home/victor/EngSI/app/mailers/order_mailer.rb": {[m
+[32m +        "lines": [[m
+[32m +          1,[m
+[32m +          1,[m
+[32m +          0,[m
+[32m +          null,[m
+[32m +          0,[m
+[32m +          null,[m
+[32m +          null[m
+[32m +        ][m
+[32m +      },[m
+[32m +      "/home/victor/EngSI/app/mailers/application_mailer.rb": {[m
+[32m +        "lines": [[m
+[32m +          1,[m
+[32m +          1,[m
+[32m +          1,[m
+[32m +          null[m
+[32m +        ][m
+[32m +      },[m
+[32m +      "/home/victor/EngSI/app/models/ambiente.rb": {[m
+[32m +        "lines": [[m
+[32m +          1,[m
+[32m +          null,[m
+[32m +          1,[m
+[32m +          null,[m
+[32m +          1,[m
+[32m +          null,[m
+[32m +          1,[m
+[32m +          null[m
+[32m +        ][m
+[32m +      },[m
+[32m +      "/home/victor/EngSI/app/models/lembrete.rb": {[m
+[32m +        "lines": [[m
+[32m +          1,[m
+[32m +          null,[m
+[32m +          1,[m
+[32m +          1,[m
+[32m +          null,[m
+[32m +          1,[m
+[32m +          1,[m
+[32m +          null[m
+[32m +        ][m
+[32m +      },[m
+[32m +      "/home/victor/EngSI/app/models/subitem.rb": {[m
+[32m +        "lines": [[m
+[32m +          1,[m
+[32m +          null,[m
+[32m +          1,[m
+[32m +          null,[m
+[32m +          1,[m
+[32m +          1,[m
+[32m +          null[m
+[32m +        ][m
+[32m +      },[m
+[32m +      "/home/victor/EngSI/app/channels/application_cable/channel.rb": {[m
+[32m +        "lines": [[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0[m
+[32m +        ],[m
+[32m +        "branches": {[m
+[32m +        }[m
+[32m +      },[m
+[32m +      "/home/victor/EngSI/app/channels/application_cable/connection.rb": {[m
+[32m +        "lines": [[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0[m
+[32m +        ],[m
+[32m +        "branches": {[m
+[32m +        }[m
+[32m +      },[m
+[32m +      "/home/victor/EngSI/app/controllers/ambientes_controller.rb": {[m
+[32m +        "lines": [[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          null,[m
+[32m +          null,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          null,[m
+[32m +          null,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          null,[m
+[32m +          null,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          null,[m
+[32m +          null,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          null,[m
+[32m +          null,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          null,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          null,[m
+[32m +          null,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          null,[m
+[32m +          null,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          null,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          null,[m
+[32m +          0,[m
+[32m +          null,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          null,[m
+[32m +          null,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          null,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0[m
+[32m +        ],[m
+[32m +        "branches": {[m
+[32m +        }[m
+[32m +      },[m
+[32m +      "/home/victor/EngSI/app/controllers/application_controller.rb": {[m
+[32m +        "lines": [[m
+[32m +          0,[m
+[32m +          null,[m
+[32m +          0[m
+[32m +        ],[m
+[32m +        "branches": {[m
+[32m +        }[m
+[32m +      },[m
+[32m +      "/home/victor/EngSI/app/controllers/home_controller.rb": {[m
+[32m +        "lines": [[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0[m
+[32m +        ],[m
+[32m +        "branches": {[m
+[32m +        }[m
+[32m +      },[m
+[32m +      "/home/victor/EngSI/app/controllers/lembretes_controller.rb": {[m
+[32m +        "lines": [[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          null,[m
+[32m +          null,[m
+[32m +          0,[m
+[32m +          null,[m
+[32m +          null,[m
+[32m +          null,[m
+[32m +          null,[m
+[32m +          null,[m
+[32m +          null,[m
+[32m +          null,[m
+[32m +          null,[m
+[32m +          null,[m
+[32m +          null,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          null,[m
+[32m +          null,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          null,[m
+[32m +          null,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          null,[m
+[32m +          null,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          null,[m
+[32m +          null,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          null,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          null,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          null,[m
+[32m +          null,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          null,[m
+[32m +          null,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          null,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          null,[m
+[32m +          0,[m
+[32m +          null,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          null,[m
+[32m +          null,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          null,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          null,[m
+[32m +          0[m
+[32m +        ],[m
+[32m +        "branches": {[m
+[32m +        }[m
+[32m +      },[m
+[32m +      "/home/victor/EngSI/app/controllers/subitems_controller.rb": {[m
+[32m +        "lines": [[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          null,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          null,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          null,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          null,[m
+[32m +          0,[m
+[32m +          null,[m
+[32m +          0,[m
+[32m +          null,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          null,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          null,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          null,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          null,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          null,[m
+[32m +          0,[m
+[32m +          null,[m
+[32m +          0,[m
+[32m +          null,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          null,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          null,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          null,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0,[m
+[32m +          0[m
+[32m +        ],[m
+[32m +        "branches": {[m
+[32m +        }[m
+[32m +      },[m
+[32m +      "/home/victor/EngSI/app/jobs/application_job.rb": {[m
+[32m +        "lines": [[m
+[32m +          0,[m
+[32m +          null,[m
+[32m +          null,[m
+[32m +          null,[m
+[32m +          null,[m
+[32m +          null,[m
+[32m +          0[m
+[32m +        ],[m
+[32m +        "branches": {[m
+[32m +        }[m
+[32m +      }[m
+[32m +    },[m
+[32m +    "timestamp": 1670378346[m
+[32m +  },[m
+[32m +  "Cucumber Features": {[m
+[32m +    "coverage": {[m
+[32m +      "/mnt/d/estudos/faculdade/10 semestre/esi/App-EngenhariaSI/app/models/user.rb": {[m
+[32m++=======[m
+[32m+       "/home/victor/App-EngenhariaSI/app/models/user.rb": {[m
+[32m++>>>>>>> refs/remotes/origin/main[m
+          "lines": [[m
+            1,[m
+            null,[m
+[36m@@@ -524,7 -71,7 +528,11 @@@[m
+            null[m
+          ][m
+        },[m
+[32m++<<<<<<< HEAD[m
+[32m +      "/mnt/d/estudos/faculdade/10 semestre/esi/App-EngenhariaSI/app/controllers/home_controller.rb": {[m
+[32m++=======[m
+[32m+       "/home/victor/App-EngenhariaSI/app/mailers/order_mailer.rb": {[m
+[32m++>>>>>>> refs/remotes/origin/main[m
+          "lines": [[m
+            1,[m
+            1,[m
+[36m@@@ -533,14 -88,7 +549,20 @@@[m
+            null[m
+          ][m
+        },[m
+[32m++<<<<<<< HEAD[m
+[32m +      "/mnt/d/estudos/faculdade/10 semestre/esi/App-EngenhariaSI/app/controllers/application_controller.rb": {[m
+[32m++=======[m
+[32m+       "/home/victor/App-EngenhariaSI/app/mailers/application_mailer.rb": {[m
+[32m++>>>>>>> refs/remotes/origin/main[m
+[32m +        "lines": [[m
+[32m +          1,[m
+[31m-           null,[m
+[32m++          1,[m
+[32m++          1,[m
+[32m +          null[m
+[32m +        ][m
+[32m +      },[m
+[32m++<<<<<<< HEAD[m
+[32m +      "/mnt/d/estudos/faculdade/10 semestre/esi/App-EngenhariaSI/app/controllers/ambientes_controller.rb": {[m
+          "lines": [[m
+            1,[m
+            1,[m
+[36m@@@ -620,7 -96,7 +642,10 @@@[m
+            null[m
+          ][m
+        },[m
+[32m +      "/mnt/d/estudos/faculdade/10 semestre/esi/App-EngenhariaSI/app/models/ambiente.rb": {[m
+[32m++=======[m
+[32m+       "/home/victor/App-EngenhariaSI/app/models/ambiente.rb": {[m
+[32m++>>>>>>> refs/remotes/origin/main[m
+          "lines": [[m
+            1,[m
+            null,[m
+[36m@@@ -632,7 -108,7 +657,11 @@@[m
+            null[m
+          ][m
+        },[m
+[32m++<<<<<<< HEAD[m
+[32m +      "/mnt/d/estudos/faculdade/10 semestre/esi/App-EngenhariaSI/app/models/lembrete.rb": {[m
+[32m++=======[m
+[32m+       "/home/victor/App-EngenhariaSI/app/models/lembrete.rb": {[m
+[32m++>>>>>>> refs/remotes/origin/main[m
+          "lines": [[m
+            1,[m
+            null,[m
+[36m@@@ -861,13 -140,91 +890,94 @@@[m
+          "branches": {[m
+          }[m
+        },[m
+[32m++<<<<<<< HEAD[m
+[32m +      "/mnt/d/estudos/faculdade/10 semestre/esi/App-EngenhariaSI/app/jobs/application_job.rb": {[m
+[32m++=======[m
+[32m+       "/home/victor/App-EngenhariaSI/app/controllers/ambientes_controller.rb": {[m
+          "lines": [[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+            0,[m
+            null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+            null,[m
+            null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+            null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0[m
+[32m+         ],[m
+[32m+         "branches": {[m
+[32m+         }[m
+[32m+       },[m
+[32m+       "/home/victor/App-EngenhariaSI/app/controllers/application_controller.rb": {[m
+[32m+         "lines": [[m
+[32m+           0,[m
+            null,[m
+            0[m
+          ],[m
+[36m@@@ -902,8 -346,597 +1099,608 @@@[m
+          ],[m
+          "branches": {[m
+          }[m
+[31m-       }[m
+[31m-     },[m
+[31m-     "timestamp": 1670466015[m
+[32m+       },[m
+[32m+       "/home/victor/App-EngenhariaSI/app/controllers/subitems_controller.rb": {[m
+[32m+         "lines": [[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0[m
+[32m+         ],[m
+[32m+         "branches": {[m
+[32m+         }[m
+[32m+       },[m
+[32m+       "/home/victor/App-EngenhariaSI/app/jobs/application_job.rb": {[m
+[32m++>>>>>>> refs/remotes/origin/main[m
+[32m+         "lines": [[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           null,[m
+[32m+           null,[m
+[32m+           null,[m
+[32m+           null,[m
+[32m+           0[m
+[32m+         ],[m
+[32m+         "branches": {[m
+[32m+         }[m
+[32m+       },[m
+[32m++<<<<<<< HEAD[m
+[32m++      "/mnt/d/estudos/faculdade/10 semestre/esi/App-EngenhariaSI/app/mailers/application_mailer.rb": {[m
+[32m++=======[m
+[32m+       "/home/victor/App-EngenhariaSI/app/models/subitem.rb": {[m
+[32m+         "lines": [[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0[m
+[32m+         ],[m
+[32m+         "branches": {[m
+[32m+         }[m
+[32m+       }[m
+[32m+     },[m
+[32m+     "timestamp": 1670446552[m
+[32m+   },[m
+[32m+   "Cucumber Features": {[m
+[32m+     "coverage": {[m
+[32m+       "/home/victor/App-EngenhariaSI/app/models/user.rb": {[m
+[32m+         "lines": [[m
+[32m+           1,[m
+[32m+           null,[m
+[32m+           1,[m
+[32m+           null,[m
+[32m+           1,[m
+[32m+           null,[m
+[32m+           null,[m
+[32m+           null,[m
+[32m+           1,[m
+[32m+           null,[m
+[32m+           null,[m
+[32m+           null,[m
+[32m+           null,[m
+[32m+           null,[m
+[32m+           null,[m
+[32m+           null[m
+[32m+         ][m
+[32m+       },[m
+[32m+       "/home/victor/App-EngenhariaSI/app/models/application_record.rb": {[m
+[32m+         "lines": [[m
+[32m+           1,[m
+[32m+           1,[m
+[32m+           null[m
+[32m+         ][m
+[32m+       },[m
+[32m+       "/home/victor/App-EngenhariaSI/app/channels/application_cable/channel.rb": {[m
+[32m+         "lines": [[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0[m
+[32m+         ],[m
+[32m+         "branches": {[m
+[32m+         }[m
+[32m+       },[m
+[32m+       "/home/victor/App-EngenhariaSI/app/channels/application_cable/connection.rb": {[m
+[32m+         "lines": [[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0[m
+[32m+         ],[m
+[32m+         "branches": {[m
+[32m+         }[m
+[32m+       },[m
+[32m+       "/home/victor/App-EngenhariaSI/app/controllers/ambientes_controller.rb": {[m
+[32m+         "lines": [[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0[m
+[32m+         ],[m
+[32m+         "branches": {[m
+[32m+         }[m
+[32m+       },[m
+[32m+       "/home/victor/App-EngenhariaSI/app/controllers/application_controller.rb": {[m
+[32m+         "lines": [[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           0[m
+[32m+         ],[m
+[32m+         "branches": {[m
+[32m+         }[m
+[32m+       },[m
+[32m+       "/home/victor/App-EngenhariaSI/app/controllers/home_controller.rb": {[m
+[32m+         "lines": [[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0[m
+[32m+         ],[m
+[32m+         "branches": {[m
+[32m+         }[m
+[32m+       },[m
+[32m+       "/home/victor/App-EngenhariaSI/app/controllers/lembretes_controller.rb": {[m
+[32m+         "lines": [[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           null,[m
+[32m+           null,[m
+[32m+           null,[m
+[32m+           null,[m
+[32m+           null,[m
+[32m+           null,[m
+[32m+           null,[m
+[32m+           null,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           0[m
+[32m+         ],[m
+[32m+         "branches": {[m
+[32m+         }[m
+[32m+       },[m
+[32m+       "/home/victor/App-EngenhariaSI/app/controllers/subitems_controller.rb": {[m
+[32m+         "lines": [[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0[m
+[32m+         ],[m
+[32m+         "branches": {[m
+[32m+         }[m
+[32m+       },[m
+[32m+       "/home/victor/App-EngenhariaSI/app/helpers/ambientes_helper.rb": {[m
+[32m+         "lines": [[m
+[32m+           0,[m
+[32m+           0[m
+[32m+         ],[m
+[32m+         "branches": {[m
+[32m+         }[m
+[32m+       },[m
+[32m+       "/home/victor/App-EngenhariaSI/app/helpers/application_helper.rb": {[m
+[32m+         "lines": [[m
+[32m+           0,[m
+[32m+           0[m
+[32m+         ],[m
+[32m+         "branches": {[m
+[32m+         }[m
+[32m+       },[m
+[32m+       "/home/victor/App-EngenhariaSI/app/helpers/lembretes_helper.rb": {[m
+[32m+         "lines": [[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0[m
+[32m+         ],[m
+[32m+         "branches": {[m
+[32m+         }[m
+[32m+       },[m
+[32m+       "/home/victor/App-EngenhariaSI/app/helpers/subitems_helper.rb": {[m
+[32m+         "lines": [[m
+[32m+           0,[m
+[32m+           0[m
+[32m+         ],[m
+[32m+         "branches": {[m
+[32m+         }[m
+[32m+       },[m
+[32m+       "/home/victor/App-EngenhariaSI/app/jobs/application_job.rb": {[m
+[32m+         "lines": [[m
+[32m+           0,[m
+[32m+           null,[m
+[32m+           null,[m
+[32m+           null,[m
+[32m+           null,[m
+[32m+           null,[m
+[32m+           0[m
+[32m+         ],[m
+[32m+         "branches": {[m
+[32m+         }[m
+[32m+       },[m
+[32m+       "/home/victor/App-EngenhariaSI/app/mailers/application_mailer.rb": {[m
+[32m++>>>>>>> refs/remotes/origin/main[m
+[32m+         "lines": [[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0,[m
+[32m+           0[m
+[32m+         ],[m
+[32m+         "branches": {[m
+[32m+         }[m
+[32m+       },[m
+[31m -      "/home/victor/App-EngenhariaSI/app/mailers/order_mailer.rb": {[m
+[32m++      "/mnt/d/estudos/faculdade/10 semestre/esi/App-EngenhariaSI/app/mailers/order_mailer.rb": {[m
+[32m+         "lines": [[m
+[32m+           0,[m
+[32m+           0,
