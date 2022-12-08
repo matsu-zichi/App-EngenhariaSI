@@ -5,35 +5,36 @@
 <div id="lembretes">
     <%= turbo_frame_tag "lembretes"%>
       <table class="table">
-      <thead>
-        <tr>
-          <th><%= link_to "Titulo", id: "Titulo", :sort => "titulo"%></th>
-          <th>Data de expiração</th>
-          <th>Tempo restante</th>
-          <th><%= link_to "Prioridade", id: "Prioridade", :sort => "prioridade"%></th>
-        </tr>
-      </thead>
-      <tbody class="table-group-divider">
+        <thead>
+          <tr>
+            <th><%= link_to "Titulo", id: "Titulo", :sort => "titulo"%></th>
+            <th>Data de expiração</th>
+            <th>Tempo restante</th>
+            <th><%= link_to "Prioridade", id: "Prioridade", :sort => "prioridade"%></th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
 
-      <% @lembretes.each do |lembrete| %>
-      <tr>
-        <td><%= lembrete.titulo %></td>
-        <% if !lembrete.expire_at.nil? %>
-          <td><%= lembrete.expire_at.strftime("%d/%m/%Y, %H:%M:%S") %></td>
-          <td><%= calcula_countdown(lembrete.expire_at - DateTime.now) %></td>
-        <% else %>
-          <td></td>
-          <td></td>
-        <% end %>
-        <td><%= lembrete.prioridade %></td>
-        <td><%= link_to 'Mostrar Sub-itens', user_ambiente_lembrete_subitems_path(current_user, @ambiente, lembrete) %></td>
-        <td><%= link_to "Detalhes", user_ambiente_lembrete_path(current_user, @ambiente, lembrete) %></td>
-        <td><%= link_to 'Editar lembrete', edit_user_ambiente_lembrete_path(current_user, @ambiente, lembrete) %></td>
-        <td><%= button_to "Deletar lembrete", user_ambiente_lembrete_path(current_user, @ambiente, lembrete), method: :delete %></td>
-      </tr>
-    </div>
-  <% end %>
+          <% @lembretes.each do |lembrete| %>
+            <tr>
+              <td><%= lembrete.titulo %></td>
+              <% if !lembrete.expire_at.nil? %>
+                <td><%= lembrete.expire_at.strftime("%d/%m/%Y, %H:%M:%S") %></td>
+                <td><%= calcula_countdown(lembrete.expire_at - DateTime.now) %></td>
+              <% else %>
+                <td></td>
+                <td></td>
+              <% end %>
+              <td><%= lembrete.prioridade %></td>
+              <td><%= link_to 'Mostrar Sub-itens', user_ambiente_lembrete_subitems_path(current_user, @ambiente, lembrete), class: "btn btn-info" %></td>
+              <td><%= link_to "Detalhes", user_ambiente_lembrete_path(current_user, @ambiente, lembrete), class:"btn btn-primary" %></td>
+              <td><%= link_to 'Editar lembrete', edit_user_ambiente_lembrete_path(current_user, @ambiente, lembrete), class:"btn btn-warning" %></td>
+              <td><%= button_to "Deletar lembrete", user_ambiente_lembrete_path(current_user, @ambiente, lembrete), class:"btn btn-danger", method: :delete %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
 </div>
 
-<%= link_to "Adicionar lembrete", new_user_ambiente_lembrete_path %> <br>
-<%= link_to 'Voltar para ambiente', user_ambiente_path(current_user, @ambiente) %>
+<%= link_to "Adicionar lembrete", new_user_ambiente_lembrete_path, class: "btn btn-secondary" %>
+<%= link_to 'Voltar para ambientes', user_ambientes_path, class: "btn btn-outline-info" %>

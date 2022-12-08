@@ -3,6 +3,8 @@
 <%= render @lembrete %>
 
 <div>
-  <%= link_to "Editar lembrete", edit_user_ambiente_lembrete_path(current_user, @ambiente, @lembrete) %> |
-  <%= link_to "Voltar", user_ambiente_lembretes_path %>
+  <%= link_to 'Mostrar Sub-itens', user_ambiente_lembrete_subitems_path(current_user, @ambiente, @lembrete), class: "btn btn-outline-info" %>
+  <%= link_to "Editar lembrete", edit_user_ambiente_lembrete_path(current_user, @ambiente, @lembrete), class: "btn btn-outline-warning" %>
+  <%= link_to "Deletar lembrete", user_ambiente_lembrete_path(current_user, @ambiente, @lembrete), class:"btn btn-outline-danger", method: :delete %>
+  <%= link_to "Voltar", user_ambiente_lembretes_path, class: "btn btn-outline-secondary" %>
 </div>

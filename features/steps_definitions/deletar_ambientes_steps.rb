@@ -8,7 +8,8 @@ Dado('que eu estou na página de visualização do ambiente {string}') do |strin
   fill_in "Password", :with => "123456"
   click_on "Log in"
   click_on "Ambientes"
-  click_on "Show Ambiente"
+  click_on "Edit Ambiente"
+  click_on "Ver detalhes desse ambiente"
 end
 
 Quando('eu clico no botao Deletar') do

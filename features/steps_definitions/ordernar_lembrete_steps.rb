@@ -8,7 +8,6 @@ Dado('que eu estou na página do ambiente {string}') do |string|
    fill_in "Password", :with => "123456"
    click_on "Log in"
    click_on "Ambientes"
-   click_on "Show Ambiente"
    click_on "Mostrar lembretes"
 end
 

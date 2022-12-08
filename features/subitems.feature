@@ -14,28 +14,28 @@ Cenário: Cadastro de Subitem com sucesso
     Quando for na página de cadastro de subitens do lembrete
     E preencho o campo "Titulo" com "Lembrete 1 de x"
     E preencho o campo "Texto" com "Não se esquecer de fazer as tarefas"
-    E cliclar em "Create Subitem"
+    E cliclar em "Criar"
     Entao deveria ver na pagina "Subitem was successfully created."
 
 Cenário: Cadastro de Subitem com erro - Sem titulo
     Quando for na página de cadastro de subitens do lembrete
     E preencho o campo "Titulo" com ""
     E preencho o campo "Texto" com "Texto"
-    E clicar em "Create Subitem"
+    E clicar em "Criar"
     Então deveria ver na pagina "Titulo can't be blank"
 
 Cenário: Cadastro de Subitem com erro - Sem texto
     Quando for na página de cadastro de subitens do lembrete
     E preencho o campo "Titulo" com "Lembrete 1 de x"
     E preencho o campo "Texto" com ""
-    E clicar em "Create Subitem"
+    E clicar em "Criar"
     Então deveria ver na pagina "Texto can't be blank"
 
 Cenário: Cadastro de Subitem com erro - Sem titulo e texto
     Quando for na página de cadastro de subitens do lembrete
     E preencho o campo "Titulo" com ""
     E preencho o campo "Texto" com ""
-    E clicar em "Create Subitem"
+    E clicar em "Criar"
     Então deveria ver na pagina "2 errors prohibited this lembrete from being saved:"
 
 Cenário: Editar cadastro de Subitem com sucesso
@@ -43,7 +43,7 @@ Cenário: Editar cadastro de Subitem com sucesso
     Quando for na página de edicao do subitem
     E preencho o campo "Titulo" com "Lembrete 1 de xy1"
     E preencho o campo "Texto" com "Tarefas 1 de xy1"
-    E cliclar em "Update Subitem"
+    E cliclar em "Criar"
     Entao deveria ver na pagina "Subitem was successfully updated."
 
 Cenário: Editar cadastro de Subitem com erro - Sem titulo
@@ -51,7 +51,7 @@ Cenário: Editar cadastro de Subitem com erro - Sem titulo
     Quando for na página de edicao do subitem
     E preencho o campo "Titulo" com ""
     E preencho o campo "Texto" com "Tarefas 1 de xy1"
-    E clicar em "Update Subitem"
+    E clicar em "Criar"
     Então deveria ver na pagina "Titulo can't be blank"
 
 Cenário: Editar cadastro de Subitem com erro - Sem texto
@@ -59,7 +59,7 @@ Cenário: Editar cadastro de Subitem com erro - Sem texto
     Quando for na página de edicao do subitem
     E preencho o campo "Titulo" com "Lembrete 1 de xy1"
     E preencho o campo "Texto" com ""
-    E clicar em "Update Subitem"
+    E clicar em "Criar"
     Então deveria ver na pagina "Texto can't be blank"
 
 Cenário: Editar cadastro de Subitem com erro - Sem titulo e texto
@@ -67,7 +67,7 @@ Cenário: Editar cadastro de Subitem com erro - Sem titulo e texto
     Quando for na página de edicao do subitem
     E preencho o campo "Titulo" com ""
     E preencho o campo "Texto" com ""
-    E clicar em "Update Subitem"
+    E clicar em "Criar"
     Então deveria ver na pagina "2 errors prohibited this lembrete from being saved:"
 
 

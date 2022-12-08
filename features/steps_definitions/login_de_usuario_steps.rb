@@ -23,7 +23,7 @@ Quando('clicar {string}') do |string|
 end
 
 Então('Deveria ver a página inicial da área logada') do
-    expect(page).to have_content('teste@teste.br') 
+    expect(page).to have_content('Bem-vindo ao Não se Esqueça!') 
 end
 
 Quando('for na página de login') do
