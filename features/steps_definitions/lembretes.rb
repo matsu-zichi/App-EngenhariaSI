@@ -1,4 +1,6 @@
 require 'mailslurp_client'
+require 'selenium-webdriver'
+
 # configure the mailslurp client with an API Key
 MailSlurpClient.configure do |config|
     api_key = "f2cbcf9bbe3ab102cf7ed67e4bcf6a157fc3d84d7ecb95ca1f64e3d791360140"
@@ -52,6 +54,16 @@ Quando('preencher email') do
     inbox = inbox_controller.create_inbox
 
     fill_in("Email", with: inbox.email_address)
+end
+
+Quando('apertar seta pra baixo') do 
+    input = find_field "lembrete_endereco"
+    input.native.send_keys :arrow_down
+    input.native.send_keys :tab
+end
+
+Entao('o campo de LatAlt devera estar preenchido com {string}') do |string|
+    
 end
 
 Entao('deveria ver {string}') do |string|

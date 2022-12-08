@@ -88,7 +88,7 @@ class LembretesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def lembrete_params
-      params.require(:lembrete).permit(:titulo, :texto, :expire_at, :prioridade, :email, :ambiente_id, :user_id)
+      params.require(:lembrete).permit(:titulo, :texto, :expire_at, :prioridade, :email, :endereco, :latalt, :ambiente_id, :user_id)
     end
 
   private

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_12_05_204422) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_08_002308) do
   create_table "ambientes", force: :cascade do |t|
     t.string "nome"
     t.string "descricao"
@@ -29,6 +29,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_05_204422) do
     t.datetime "expire_at"
     t.string "email"
     t.string "prioridade"
+    t.string "endereco"
+    t.string "latalt"
     t.index ["ambiente_id"], name: "index_lembretes_on_ambiente_id"
   end
 
